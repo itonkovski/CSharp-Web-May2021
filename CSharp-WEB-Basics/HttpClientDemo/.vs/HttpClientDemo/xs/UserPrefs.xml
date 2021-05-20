@@ -3,8 +3,20 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="PrimeNumbersCounter/Program.cs">
     <Files>
       <File FileName="HttpClientDemo/Program.cs" Line="35" Column="75" />
-      <File FileName="PrimeNumbersCounter/Program.cs" Line="29" Column="1" />
+      <File FileName="PrimeNumbersCounter/Program.cs" Line="14" Column="1" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="HttpClientDemo" expanded="True">
+            <Node name="HttpClientDemo" expanded="True" />
+            <Node name="PrimeNumbersCounter" expanded="True">
+              <Node name="Program.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
