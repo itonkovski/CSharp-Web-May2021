@@ -1,23 +1,10 @@
-﻿<Properties StartupConfiguration="{F6761BE9-4041-49C4-8E5E-0CD1D79A0A6D}|Default">
+﻿<Properties StartupConfiguration="{0DA264F9-ABA6-42F1-A0C3-D899D7AFA257}|Default">
   <MonoDevelop.Ide.ItemProperties.HttpClientDemo PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="HttpClientDemo/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="PrimeNumbersCounter/Program.cs">
     <Files>
-      <File FileName="HttpClientDemo/Program.cs" Line="35" Column="10" />
+      <File FileName="HttpClientDemo/Program.cs" Line="35" Column="75" />
+      <File FileName="PrimeNumbersCounter/Program.cs" Line="29" Column="1" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="HttpClientDemo" expanded="True">
-            <Node name="HttpClientDemo" expanded="True">
-              <Node name="Dependencies" expanded="True">
-                <Node name="FrameworkReferences" expanded="True" />
-              </Node>
-              <Node name="Program.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
@@ -25,4 +12,5 @@
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.PrimeNumbersCounter PreferredExecutionTarget="MonoDevelop.Default" />
 </Properties>

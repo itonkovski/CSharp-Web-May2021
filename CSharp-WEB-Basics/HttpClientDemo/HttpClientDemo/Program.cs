@@ -31,6 +31,8 @@ namespace HttpClientDemo
 
                     string response = "HTTP/1.1 200 OK" + NewLine +
                         "Server: CSharpWebSoftUniServer 2021" + NewLine +
+                        //"Location: https://www.google.com" + NewLine +
+                        //If we want to redirect : "HTTP/1.1 307 Redirect"
                         "Content-Type: text/html; charset=utf-8" + NewLine +
                         "Content-Lenght: " + html.Length + NewLine +
                         NewLine +
@@ -41,17 +43,6 @@ namespace HttpClientDemo
 
                     Console.WriteLine(new string('=', 70));
                 }
-
-                //using (var stream = client.GetStream())
-                //{
-                //    byte[] buffer = new byte[1000000];
-                //    var lenght = stream.Read(buffer, 0, buffer.Length);
-
-                //    string requstString = Encoding.UTF8.GetString(buffer, 0, lenght);
-                //    Console.WriteLine(requstString);
-
-                //    Console.WriteLine(new string('=', 70));
-                //}
             }
         }
 
