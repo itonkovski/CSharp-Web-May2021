@@ -7,7 +7,12 @@ namespace TestWebApp.Controllers
     {
         public IActionResult List()
         {
-            return Redirect("/cats/search");
+            //this.Response.Headers.Add("Content-Disposition", "attachment");
+            //return File("/path/to/pdf", "application/pdf");
+
+            //return Redirect("/cats/search");
+
+            return View();
         }
 
         public IActionResult Search()

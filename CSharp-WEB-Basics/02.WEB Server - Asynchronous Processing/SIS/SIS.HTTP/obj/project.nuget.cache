@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "C9t/ezv+E+P82qJE2UU33Iliapqh1dB1yqowA928x+eXz52x8tFMBHt59JSFWf07wX2rei8F6b8y5UduqrqQ8w==",
+  "success": true,
+  "projectFilePath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/01.WEB Server - HTTP Protocol/SIS/SIS.HTTP/SIS.HTTP.csproj",
+  "expectedPackageFiles": [
+    "/Users/ivaylotonkovski/.nuget/packages/microsoft.netcore.app/2.2.0/microsoft.netcore.app.2.2.0.nupkg.sha512",
+    "/Users/ivaylotonkovski/.nuget/packages/microsoft.netcore.dotnetapphost/2.2.0/microsoft.netcore.dotnetapphost.2.2.0.nupkg.sha512",
+    "/Users/ivaylotonkovski/.nuget/packages/microsoft.netcore.dotnethostpolicy/2.2.0/microsoft.netcore.dotnethostpolicy.2.2.0.nupkg.sha512",
+    "/Users/ivaylotonkovski/.nuget/packages/microsoft.netcore.dotnethostresolver/2.2.0/microsoft.netcore.dotnethostresolver.2.2.0.nupkg.sha512",
+    "/Users/ivaylotonkovski/.nuget/packages/microsoft.netcore.platforms/2.2.0/microsoft.netcore.platforms.2.2.0.nupkg.sha512",
+    "/Users/ivaylotonkovski/.nuget/packages/microsoft.netcore.targets/2.0.0/microsoft.netcore.targets.2.0.0.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

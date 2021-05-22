@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SIS.HTTP" expanded="True" selected="True">
+            <Node name="SIS.HTTP" expanded="True">
+              <Node name="Common" expanded="True" />
+              <Node name="Enums" expanded="True" />
+              <Node name="Exceptions" expanded="True" />
+              <Node name="Extensions" expanded="True" />
+              <Node name="Headers" expanded="True" />
+              <Node name="Requests" expanded="True" />
+              <Node name="Responses" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
