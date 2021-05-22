@@ -1,2 +1,3 @@
-# CSharp-Web-Mai2021
+# CSharp-Web-May2021
  
+C# WEB - SoftUni course, including WEB Basics and ASP.NET Core
