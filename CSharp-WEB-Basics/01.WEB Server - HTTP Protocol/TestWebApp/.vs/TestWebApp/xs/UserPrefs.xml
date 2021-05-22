@@ -1,14 +1,25 @@
 ﻿<Properties StartupConfiguration="{2D7A91CB-648C-4E58-AC76-FB1FDE70DA8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TestWebApp/Program.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestWebApp/Views/Cats/Search.cshtml">
     <Files>
       <File FileName="TestWebApp/Program.cs" Line="1" Column="1" />
+      <File FileName="TestWebApp/Controllers/CatsController.cs" Line="19" Column="1" />
+      <File FileName="TestWebApp/Views/Cats/List.cshtml" Line="6" Column="8" />
+      <File FileName="TestWebApp/Views/Cats/Search.cshtml" Line="1" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="TestWebApp" expanded="True">
             <Node name="TestWebApp" expanded="True">
-              <Node name="Program.cs" selected="True" />
+              <Node name="Dependencies" expanded="True">
+                <Node name="FrameworkReferences" expanded="True" />
+              </Node>
+              <Node name="Controllers" expanded="True" />
+              <Node name="Views" expanded="True">
+                <Node name="Cats" expanded="True">
+                  <Node name="Search.cshtml" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
@@ -17,7 +28,7 @@
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.TestWebApp FirstBuild="True" PreferredExecutionTarget="/Applications/Safari.app" />
+  <MonoDevelop.Ide.ItemProperties.TestWebApp PreferredExecutionTarget="/Applications/Google Chrome.app" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
