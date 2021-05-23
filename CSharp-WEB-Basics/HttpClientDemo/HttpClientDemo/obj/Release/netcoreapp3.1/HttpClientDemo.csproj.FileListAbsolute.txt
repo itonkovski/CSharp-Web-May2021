@@ -1,0 +1,11 @@
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/bin/Release/netcoreapp3.1/HttpClientDemo.deps.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/bin/Release/netcoreapp3.1/HttpClientDemo.runtimeconfig.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/bin/Release/netcoreapp3.1/HttpClientDemo.runtimeconfig.dev.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/bin/Release/netcoreapp3.1/HttpClientDemo.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/bin/Release/netcoreapp3.1/HttpClientDemo.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/obj/Release/netcoreapp3.1/HttpClientDemo.AssemblyInfoInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/obj/Release/netcoreapp3.1/HttpClientDemo.AssemblyInfo.cs
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/obj/Release/netcoreapp3.1/HttpClientDemo.csproj.CoreCompileInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/obj/Release/netcoreapp3.1/HttpClientDemo.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/obj/Release/netcoreapp3.1/HttpClientDemo.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/HttpClientDemo/obj/Release/netcoreapp3.1/HttpClientDemo.genruntimeconfig.cache
