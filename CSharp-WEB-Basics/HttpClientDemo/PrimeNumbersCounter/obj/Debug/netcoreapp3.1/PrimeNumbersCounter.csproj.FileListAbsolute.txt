@@ -1,0 +1,12 @@
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/bin/Debug/netcoreapp3.1/PrimeNumbersCounter.deps.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/bin/Debug/netcoreapp3.1/PrimeNumbersCounter.runtimeconfig.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/bin/Debug/netcoreapp3.1/PrimeNumbersCounter.runtimeconfig.dev.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/bin/Debug/netcoreapp3.1/PrimeNumbersCounter.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/bin/Debug/netcoreapp3.1/PrimeNumbersCounter.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.csprojAssemblyReference.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.AssemblyInfoInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.AssemblyInfo.cs
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.csproj.CoreCompileInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/PrimeNumbersCounter/obj/Debug/netcoreapp3.1/PrimeNumbersCounter.genruntimeconfig.cache

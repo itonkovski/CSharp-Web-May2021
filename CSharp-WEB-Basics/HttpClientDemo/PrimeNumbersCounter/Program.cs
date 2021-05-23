@@ -14,24 +14,37 @@ namespace PrimeNumbersCounter
 
         static void Main(string[] args)
         {
-            Stopwatch sw2 = Stopwatch.StartNew();
-            List<Task> tasks = new List<Task>();
+            /*
+             * 664580
+             * 00:00:11.2199496
+             * 
+             * with Parallel.For 
+             * 664580
+             * 00:00:06.2878045
+             */
+            Stopwatch sw = Stopwatch.StartNew();
+            PrintPrimeCount(1, 10_000_000);
+            Console.WriteLine(Count);
+            Console.WriteLine(sw.Elapsed);
 
-            for (int i = 1; i <= 100; i++)
-            {
-                var task = Task.Run(async () =>
-                {
-                    HttpClient httpClient = new HttpClient();
-                    var url = $"https://vicove.com/vic-{i}";
-                    var httpResponse = await httpClient.GetAsync(url);
-                    var vic = await httpResponse.Content.ReadAsStringAsync();
-                    Console.WriteLine(vic.Length);
-                });
-                tasks.Add(task);
-            }
+            //Stopwatch sw2 = Stopwatch.StartNew();
+            //List<Task> tasks = new List<Task>();
 
-            Task.WaitAll(tasks.ToArray());
-            Console.WriteLine(sw2.Elapsed);
+            //for (int i = 1; i <= 100; i++)
+            //{
+            //    var task = Task.Run(async () =>
+            //    {
+            //        HttpClient httpClient = new HttpClient();
+            //        var url = $"https://vicove.com/vic-{i}";
+            //        var httpResponse = await httpClient.GetAsync(url);
+            //        var vic = await httpResponse.Content.ReadAsStringAsync();
+            //        Console.WriteLine(vic.Length);
+            //    });
+            //    tasks.Add(task);
+            //}
+
+            //Task.WaitAll(tasks.ToArray());
+            //Console.WriteLine(sw2.Elapsed);
 
 
             //Stopwatch sw = Stopwatch.StartNew();
@@ -61,7 +74,8 @@ namespace PrimeNumbersCounter
 
         static void PrintPrimeCount(int min, int max)
         {
-            for (int i = min; i <= max; i++)
+            //for (int i = min; i <= max; i++)
+            Parallel.For(min, max + 1, i =>
             {
                 bool isPrime = true;
                 for (int j = 2; j <= Math.Sqrt(i); j++)
@@ -75,12 +89,12 @@ namespace PrimeNumbersCounter
 
                 if (isPrime)
                 {
-                    lock(lockObj)
+                    lock (lockObj)
                     {
                         Count++;
                     }
                 }
-            }
+            });
         }
     }
 }
