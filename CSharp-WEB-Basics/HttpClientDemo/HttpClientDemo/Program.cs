@@ -31,14 +31,20 @@ namespace HttpClientDemo
             using (var stream = client.GetStream())
             {
                 byte[] buffer = new byte[1000000];
+                //checks the id of the active thread
                 //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                 var lenght = await stream.ReadAsync(buffer, 0, buffer.Length);
+                //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
 
 
                 string requstString = Encoding.UTF8.GetString(buffer, 0, lenght);
                 Console.WriteLine(requstString);
 
-                Thread.Sleep(5000);
+                //bool sessionSet = false;
+                //if (requstString.Contains("sid="))
+                //{
+                //    sessionSet = true;
+                //}
 
                 string html = $"<h1>Hello from the CSharp WEB 2021 Server {DateTime.Now} </h1>" +
                     $"<form action=/tweet method=post><input name=username /><input name=password />" +
@@ -48,15 +54,19 @@ namespace HttpClientDemo
                     "Server: CSharpWebSoftUniServer 2021" + NewLine +
                     //"Location: https://www.google.com" + NewLine +
                     //If we want to redirect : "HTTP/1.1 307 Redirect"
-                    "X-Server-Version: 1.0" + NewLine +
-                    "Set-Cookie: sid=12u47941y821eu91eu91i" + NewLine +
                     "Content-Type: text/html; charset=utf-8" + NewLine +
+                    "X-Server-Version: 1.0" + NewLine +
+                    //when we use the sessionSet
+                    //(!sessionSet ? ("Set-Cookie: sid=12u47941y821eu91eu91i; Path=/;" + NewLine) : string.Empty) +
+                    "Set-Cookie: sid=12u47941y821eu91eu91i; Max-Age=" + (3 * 60) + NewLine +
                     "Content-Lenght: " + html.Length + NewLine +
                     NewLine +
                     html + NewLine;
 
                 byte[] responseBytes = Encoding.UTF8.GetBytes(response);
+                //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
                 await stream.WriteAsync(responseBytes);
+                //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
 
                 Console.WriteLine(new string('=', 70));
             }
@@ -64,7 +74,6 @@ namespace HttpClientDemo
 
         public static async Task ReadData()
         {
-            Console.OutputEncoding = Encoding.UTF8;
             string url = "https://softuni.bg/courses/csharp-web-basics";
             HttpClient httpClient = new HttpClient();
             var response = await httpClient.GetAsync(url);
