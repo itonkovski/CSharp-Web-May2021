@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Net.Sockets;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading;
 using System.Threading.Tasks;
 
@@ -11,6 +13,7 @@ namespace HttpClientDemo
 {
     class Program
     {
+        static Dictionary<string, int> SessionStorage = new Dictionary<string, int>();
         const string NewLine = "\r\n";
 
         static async Task Main(string[] args)
@@ -37,8 +40,23 @@ namespace HttpClientDemo
                 //Console.WriteLine(Thread.CurrentThread.ManagedThreadId);
 
 
-                string requstString = Encoding.UTF8.GetString(buffer, 0, lenght);
-                Console.WriteLine(requstString);
+                string requestString = Encoding.UTF8.GetString(buffer, 0, lenght);
+                Console.WriteLine(requestString);
+
+                var sid = Guid.NewGuid().ToString();
+                var match = Regex.Match(requestString, @"sid=[^\n]*\r\n");
+                if (match.Success)
+                {
+                    sid = match.Value.Substring(4);
+                }
+                Console.WriteLine(sid);
+
+                if(!SessionStorage.ContainsKey(sid))
+                {
+                    SessionStorage.Add(sid, 0);
+                }
+
+                SessionStorage[sid]++;
 
                 //bool sessionSet = false;
                 //if (requstString.Contains("sid="))
@@ -46,7 +64,7 @@ namespace HttpClientDemo
                 //    sessionSet = true;
                 //}
 
-                string html = $"<h1>Hello from the CSharp WEB 2021 Server {DateTime.Now} </h1>" +
+                string html = $"<h1>Hello from the CSharp WEB 2021 Server {DateTime.Now} refreshed for the {SessionStorage[sid]} time</h1>" +
                     $"<form action=/tweet method=post><input name=username /><input name=password />" +
                     $"<input type=submit /></form>" + DateTime.Now;
 
@@ -58,7 +76,8 @@ namespace HttpClientDemo
                     "X-Server-Version: 1.0" + NewLine +
                     //when we use the sessionSet
                     //(!sessionSet ? ("Set-Cookie: sid=12u47941y821eu91eu91i; Path=/;" + NewLine) : string.Empty) +
-                    "Set-Cookie: sid=12u47941y821eu91eu91i; Max-Age=" + (3 * 60) + NewLine +
+                    $"Set-Cookie: sid={sid}; HttpOnly; Max-Age=" + (3 * 60) + NewLine +
+                    //Expires= " + DateTime.UtcNow.AddHours(3).ToString() 
                     "Content-Lenght: " + html.Length + NewLine +
                     NewLine +
                     html + NewLine;
