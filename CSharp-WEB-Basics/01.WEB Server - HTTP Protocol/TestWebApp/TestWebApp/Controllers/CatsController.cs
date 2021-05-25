@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace TestWebApp.Controllers
 {
@@ -11,6 +10,13 @@ namespace TestWebApp.Controllers
             //return File("/path/to/pdf", "application/pdf");
 
             //return Redirect("/cats/search");
+
+            var requestCookies = this.Request.Cookies;
+
+            if (!requestCookies.ContainsKey("Authentication"))
+            {
+                return Unauthorized();
+            }
 
             return View();
         }

@@ -33,5 +33,19 @@ namespace TestWebApp.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        public IActionResult English()
+        {
+            this.Response.Cookies.Append("Language", "en");
+
+            return RedirectToAction(nameof(Index));
+        }
+
+        public IActionResult Bulgarian()
+        {
+            this.Response.Cookies.Append("Language", "bg");
+
+            return RedirectToAction(nameof(Index));
+        }
     }
 }
