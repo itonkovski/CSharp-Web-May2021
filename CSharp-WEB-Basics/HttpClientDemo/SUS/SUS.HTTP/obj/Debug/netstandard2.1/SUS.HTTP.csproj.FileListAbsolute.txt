@@ -1,0 +1,9 @@
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/bin/Debug/netstandard2.1/SUS.HTTP.deps.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/bin/Debug/netstandard2.1/SUS.HTTP.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/bin/Debug/netstandard2.1/SUS.HTTP.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/obj/Debug/netstandard2.1/SUS.HTTP.AssemblyInfoInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/obj/Debug/netstandard2.1/SUS.HTTP.AssemblyInfo.cs
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/obj/Debug/netstandard2.1/SUS.HTTP.csproj.CoreCompileInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/obj/Debug/netstandard2.1/SUS.HTTP.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/obj/Debug/netstandard2.1/SUS.HTTP.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/obj/Debug/netstandard2.1/SUS.HTTP.csprojAssemblyReference.cache

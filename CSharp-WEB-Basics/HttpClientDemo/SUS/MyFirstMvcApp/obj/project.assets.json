@@ -1,0 +1,92 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "SUS.HTTP/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SUS.HTTP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SUS.HTTP.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SUS.HTTP/1.0.0": {
+      "type": "project",
+      "path": "../SUS.HTTP/SUS.HTTP.csproj",
+      "msbuildProject": "../SUS.HTTP/SUS.HTTP.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETCoreApp,Version=v3.1": [
+      "SUS.HTTP >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "/Users/ivaylotonkovski/.nuget/packages/": {},
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/MyFirstMvcApp.csproj",
+      "projectName": "MyFirstMvcApp",
+      "projectPath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/MyFirstMvcApp.csproj",
+      "packagesPath": "/Users/ivaylotonkovski/.nuget/packages/",
+      "outputPath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/obj/",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "/Users/ivaylotonkovski/.config/NuGet/NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "netcoreapp3.1"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "projectReferences": {
+            "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/SUS.HTTP.csproj": {
+              "projectPath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/SUS.HTTP.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.200/RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

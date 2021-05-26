@@ -1,0 +1,9 @@
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/bin/Debug/netstandard2.1/SUS.MvcFramework.deps.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/bin/Debug/netstandard2.1/SUS.MvcFramework.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/bin/Debug/netstandard2.1/SUS.MvcFramework.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/obj/Debug/netstandard2.1/SUS.MvcFramework.csprojAssemblyReference.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/obj/Debug/netstandard2.1/SUS.MvcFramework.AssemblyInfoInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/obj/Debug/netstandard2.1/SUS.MvcFramework.AssemblyInfo.cs
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/obj/Debug/netstandard2.1/SUS.MvcFramework.csproj.CoreCompileInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/obj/Debug/netstandard2.1/SUS.MvcFramework.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.MvcFramework/obj/Debug/netstandard2.1/SUS.MvcFramework.pdb

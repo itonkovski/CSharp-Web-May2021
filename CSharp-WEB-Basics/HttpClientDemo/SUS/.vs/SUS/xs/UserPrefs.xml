@@ -1,0 +1,35 @@
+﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
+  <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.HTTP/HttpConstants.cs">
+    <Files>
+      <File FileName="MyFirstMvcApp/Program.cs" Line="26" Column="10" />
+      <File FileName="SUS.HTTP/HttpServer.cs" Line="91" Column="31" />
+      <File FileName="SUS.HTTP/IHttpServer.cs" />
+      <File FileName="SUS.HTTP/HttpRequest.cs" Line="9" Column="22" />
+      <File FileName="SUS.HTTP/HttpResponse.cs" />
+      <File FileName="SUS.HTTP/Header.cs" Line="5" Column="9" />
+      <File FileName="SUS.HTTP/Cookie.cs" Line="7" Column="42" />
+      <File FileName="SUS.HTTP/HttpConstants.cs" Line="4" Column="19" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SUS" expanded="True">
+            <Node name="Apps" expanded="True">
+              <Node name="MyFirstMvcApp" expanded="True" />
+            </Node>
+            <Node name="SUS.HTTP" expanded="True">
+              <Node name="HttpConstants.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
