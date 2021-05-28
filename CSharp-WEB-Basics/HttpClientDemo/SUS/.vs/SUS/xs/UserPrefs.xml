@@ -1,15 +1,16 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.HTTP/HttpConstants.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.HTTP/HttpMethod.cs">
     <Files>
       <File FileName="MyFirstMvcApp/Program.cs" Line="26" Column="10" />
-      <File FileName="SUS.HTTP/HttpServer.cs" Line="91" Column="31" />
-      <File FileName="SUS.HTTP/IHttpServer.cs" />
-      <File FileName="SUS.HTTP/HttpRequest.cs" Line="9" Column="22" />
-      <File FileName="SUS.HTTP/HttpResponse.cs" />
-      <File FileName="SUS.HTTP/Header.cs" Line="5" Column="9" />
-      <File FileName="SUS.HTTP/Cookie.cs" Line="7" Column="42" />
-      <File FileName="SUS.HTTP/HttpConstants.cs" Line="4" Column="19" />
+      <File FileName="SUS.HTTP/HttpServer.cs" Line="99" Column="37" />
+      <File FileName="SUS.HTTP/IHttpServer.cs" Line="10" Column="33" />
+      <File FileName="SUS.HTTP/HttpRequest.cs" Line="50" Column="38" />
+      <File FileName="SUS.HTTP/HttpResponse.cs" Line="1" Column="1" />
+      <File FileName="SUS.HTTP/Header.cs" Line="12" Column="41" />
+      <File FileName="SUS.HTTP/Cookie.cs" Line="9" Column="39" />
+      <File FileName="SUS.HTTP/HttpConstants.cs" Line="8" Column="60" />
+      <File FileName="SUS.HTTP/HttpMethod.cs" Line="10" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +20,7 @@
               <Node name="MyFirstMvcApp" expanded="True" />
             </Node>
             <Node name="SUS.HTTP" expanded="True">
-              <Node name="HttpConstants.cs" selected="True" />
+              <Node name="HttpMethod.cs" selected="True" />
             </Node>
           </Node>
         </State>
