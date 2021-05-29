@@ -72,7 +72,7 @@ namespace SUS.HTTP
                     var requestAsString = Encoding.UTF8.GetString(data.ToArray());
 
                     var request = new HttpRequest(requestAsString);
-                    Console.WriteLine(requestAsString);
+                    Console.WriteLine($"{request.Method} {request.Path} => {request.Headers.Count} headers");
 
 
 

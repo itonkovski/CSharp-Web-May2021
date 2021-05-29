@@ -1,10 +1,10 @@
-﻿using System;
-namespace SUS.HTTP
+﻿namespace SUS.HTTP
 {
-    public class HttpMethod
+    public enum HttpMethod
     {
-        public HttpMethod()
-        {
-        }
+        Get = 1,
+        Post = 2,
+        Put = 3,
+        Delete = 4,
     }
 }
