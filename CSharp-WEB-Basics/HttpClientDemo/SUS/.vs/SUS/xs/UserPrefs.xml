@@ -1,31 +1,17 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.HTTP/Cookie.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstMvcApp/Program.cs">
     <Files>
-      <File FileName="MyFirstMvcApp/Program.cs" Line="26" Column="10" />
-      <File FileName="SUS.HTTP/HttpServer.cs" Line="86" Column="76" />
-      <File FileName="SUS.HTTP/HttpRequest.cs" Line="63" Column="26" />
-      <File FileName="SUS.HTTP/HttpResponse.cs" Line="46" Column="43" />
-      <File FileName="SUS.HTTP/HttpConstants.cs" Line="8" Column="60" />
-      <File FileName="SUS.HTTP/HttpStatusCode.cs" Line="9" Column="33" />
-      <File FileName="SUS.HTTP/Header.cs" Line="10" Column="32" />
-      <File FileName="SUS.HTTP/ResponseCookie.cs" Line="9" Column="32" />
-      <File FileName="SUS.HTTP/Cookie.cs" Line="6" Column="1" />
+      <File FileName="MyFirstMvcApp/Program.cs" Line="9" Column="2" />
+      <File FileName="SUS.HTTP/HttpServer.cs" />
+      <File FileName="SUS.HTTP/HttpRequest.cs" />
+      <File FileName="SUS.HTTP/HttpResponse.cs" />
+      <File FileName="SUS.HTTP/HttpConstants.cs" />
+      <File FileName="SUS.HTTP/HttpStatusCode.cs" />
+      <File FileName="SUS.HTTP/Header.cs" />
+      <File FileName="SUS.HTTP/ResponseCookie.cs" />
+      <File FileName="SUS.HTTP/Cookie.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SUS" expanded="True">
-            <Node name="Apps" expanded="True">
-              <Node name="MyFirstMvcApp" expanded="True" />
-            </Node>
-            <Node name="SUS.HTTP" expanded="True">
-              <Node name="Cookie.cs" selected="True" />
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
