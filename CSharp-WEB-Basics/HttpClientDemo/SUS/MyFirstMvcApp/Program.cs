@@ -15,6 +15,11 @@ namespace MyFirstMvcApp
 
             server.AddRoute("/", HomePage);
 
+            //server.AddRoute("/itonkovski", (request) =>
+            //{
+            //    return new HttpResponse("text/html", new byte[] { 0x56, 0x57 });
+            //});
+
             server.AddRoute("/favicon.ico", Favicon);
 
             server.AddRoute("/about", About);
