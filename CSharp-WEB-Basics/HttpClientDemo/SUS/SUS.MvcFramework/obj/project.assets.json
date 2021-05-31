@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "SUS.HTTP/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SUS.HTTP.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SUS.HTTP.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "SUS.HTTP/1.0.0": {
+      "type": "project",
+      "path": "../SUS.HTTP/SUS.HTTP.csproj",
+      "msbuildProject": "../SUS.HTTP/SUS.HTTP.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "SUS.HTTP >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/ivaylotonkovski/.nuget/packages/": {},
@@ -35,7 +54,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/SUS.HTTP.csproj": {
+              "projectPath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/SUS.HTTP.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

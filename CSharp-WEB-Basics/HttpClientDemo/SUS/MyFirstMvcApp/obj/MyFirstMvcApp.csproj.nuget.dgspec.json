@@ -145,7 +145,11 @@
         "frameworks": {
           "netstandard2.1": {
             "targetAlias": "netstandard2.1",
-            "projectReferences": {}
+            "projectReferences": {
+              "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/SUS.HTTP.csproj": {
+                "projectPath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/SUS.HTTP/SUS.HTTP.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
