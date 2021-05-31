@@ -1,10 +1,10 @@
 ﻿using System;
+using SUS.MvcFramework;
+
 namespace MyFirstMvcApp.Controllers
 {
-    public class CardsController
+    public class CardsController : Controller
     {
-        public CardsController()
-        {
-        }
+        
     }
 }
