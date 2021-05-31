@@ -1,11 +1,12 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstMvcApp/Controllers/StaticFilesController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework/Controller.cs">
     <Files>
-      <File FileName="MyFirstMvcApp/Program.cs" Line="37" Column="9" />
-      <File FileName="MyFirstMvcApp/Controllers/UserControllers.cs" Line="12" Column="41" />
-      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="19" Column="9" />
-      <File FileName="MyFirstMvcApp/Controllers/StaticFilesController.cs" Line="11" Column="10" />
+      <File FileName="MyFirstMvcApp/Program.cs" Line="23" Column="57" />
+      <File FileName="MyFirstMvcApp/Controllers/UserControllers.cs" Line="7" Column="23" />
+      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="8" Column="45" />
+      <File FileName="MyFirstMvcApp/Controllers/StaticFilesController.cs" Line="9" Column="16" />
+      <File FileName="SUS.MvcFramework/Controller.cs" Line="4" Column="16" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,13 +14,14 @@
           <Node name="SUS" expanded="True">
             <Node name="Apps" expanded="True">
               <Node name="MyFirstMvcApp" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="StaticFilesController.cs" selected="True" />
-                </Node>
+                <Node name="Controllers" expanded="True" />
                 <Node name="wwwroot" expanded="True" />
               </Node>
             </Node>
             <Node name="SUS.HTTP" expanded="True" />
+            <Node name="SUS.MvcFramework" expanded="True">
+              <Node name="Controller.cs" selected="True" />
+            </Node>
           </Node>
         </State>
       </Pad>
