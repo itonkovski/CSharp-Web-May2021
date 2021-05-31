@@ -19,3 +19,6 @@
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Users/Register.html
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Users/Login.html
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Home/Index.html
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Cards/Add.html
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Cards/All.html
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Cards/Collection.html

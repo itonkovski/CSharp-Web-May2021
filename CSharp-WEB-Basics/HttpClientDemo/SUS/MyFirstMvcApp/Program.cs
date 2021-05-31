@@ -24,6 +24,12 @@ namespace MyFirstMvcApp
 
             server.AddRoute("/users/register", new UsersControllers().Register);
 
+            server.AddRoute("/cards/all", new CardsController().All);
+
+            server.AddRoute("/cards/add", new CardsController().Add);
+
+            server.AddRoute("/cards/collection", new CardsController().Collection);
+
             await server.StartAsync(3005);
         }
 
