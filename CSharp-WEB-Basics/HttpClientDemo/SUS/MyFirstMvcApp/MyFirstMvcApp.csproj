@@ -12,6 +12,10 @@
   <ItemGroup>
     <Folder Include="wwwroot\" />
     <Folder Include="Controllers\" />
+    <Folder Include="Views\" />
+    <Folder Include="Views\Home\" />
+    <Folder Include="Views\Users\" />
+    <Folder Include="Views\Cards\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="wwwroot\favicon.ico">
