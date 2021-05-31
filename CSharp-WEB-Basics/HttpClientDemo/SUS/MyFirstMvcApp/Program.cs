@@ -56,8 +56,7 @@ namespace MyFirstMvcApp
 
         static HttpResponse Login(HttpRequest request)
         {
-            var responseHtml = "<h1>Login" +
-                "...<h1/>";
+            var responseHtml = "<h1>Login...<h1/>";
             var responseBodyBytes = Encoding.UTF8.GetBytes(responseHtml);
             var response = new HttpResponse("text/html", responseBodyBytes);
             return response;
