@@ -1,7 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 using MyFirstMvcApp.Controllers;
 using SUS.HTTP;
+using SUS.MvcFramework;
 
 namespace MyFirstMvcApp
 {
@@ -9,37 +11,16 @@ namespace MyFirstMvcApp
     {
         static async Task Main(string[] args)
         {
-            IHttpServer server = new HttpServer();
+            List<Route> routeTable = new List<Route>();
+            routeTable.Add(new Route("/", new HomeController().Index));
+            routeTable.Add(new Route("/favicon.ico", new StaticFilesController().Favicon));
+            routeTable.Add(new Route("/users/login", new UsersControllers().Login));
+            routeTable.Add(new Route("/users/register", new UsersControllers().Register));
+            routeTable.Add(new Route("/cards/all", new CardsController().All));
+            routeTable.Add(new Route("/cards/add", new CardsController().Add));
+            routeTable.Add(new Route("/cards/collection", new CardsController().Collection));
 
-            //server.AddRoute("/itonkovski", (request) =>
-            //{
-            //    return new HttpResponse("text/html", new byte[] { 0x56, 0x57 });
-            //});
-
-            server.AddRoute("/", new HomeController().Index);           
-
-            server.AddRoute("/favicon.ico", new StaticFilesController().Favicon);
-
-            server.AddRoute("/users/login", new UsersControllers().Login);
-
-            server.AddRoute("/users/register", new UsersControllers().Register);
-
-            server.AddRoute("/cards/all", new CardsController().All);
-
-            server.AddRoute("/cards/add", new CardsController().Add);
-
-            server.AddRoute("/cards/collection", new CardsController().Collection);
-
-            await server.StartAsync(3005);
+            await Host.CreateHostAsync(routeTable, 3005);
         }
-
-
-        
-
-        
-
-        
-
-        
     }
 }
