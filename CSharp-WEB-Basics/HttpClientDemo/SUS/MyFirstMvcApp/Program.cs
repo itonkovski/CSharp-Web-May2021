@@ -20,8 +20,6 @@ namespace MyFirstMvcApp
 
             server.AddRoute("/favicon.ico", new StaticFilesController().Favicon);
 
-            server.AddRoute("/about", new HomeController().About);
-
             server.AddRoute("/users/login", new UsersControllers().Login);
 
             server.AddRoute("/users/register", new UsersControllers().Register);
