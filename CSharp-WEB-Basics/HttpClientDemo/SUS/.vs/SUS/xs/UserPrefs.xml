@@ -1,14 +1,13 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstMvcApp/Views/Users/Register.html">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstMvcApp/Controllers/UsersControllers.cs">
     <Files>
       <File FileName="MyFirstMvcApp/Program.cs" Line="23" Column="57" />
-      <File FileName="MyFirstMvcApp/Controllers/UserControllers.cs" Line="8" Column="46" />
+      <File FileName="MyFirstMvcApp/Controllers/UserControllers.cs" Line="26" Column="6" />
       <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="9" Column="33" />
       <File FileName="MyFirstMvcApp/Controllers/StaticFilesController.cs" Line="8" Column="51" />
       <File FileName="SUS.MvcFramework/Controller.cs" Line="4" Column="21" />
       <File FileName="MyFirstMvcApp/Controllers/CardsController.cs" Line="8" Column="9" />
-      <File FileName="MyFirstMvcApp/Views/Users/Register.html" Line="31" Column="8" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,7 +18,7 @@
                 <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
                   <Node name="Users" expanded="True">
-                    <Node name="Register.html" selected="True" />
+                    <Node name="Login.html" selected="True" />
                   </Node>
                 </Node>
                 <Node name="wwwroot" expanded="True" />

@@ -17,3 +17,4 @@
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/SUS.MvcFramework.dll
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/SUS.MvcFramework.pdb
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Users/Register.html
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Users/Login.html
