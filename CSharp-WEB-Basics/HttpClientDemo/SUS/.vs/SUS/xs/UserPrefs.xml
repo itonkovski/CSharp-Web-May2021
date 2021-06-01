@@ -1,14 +1,19 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework/Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.HTTP/HttpResponse.cs">
     <Files>
-      <File FileName="MyFirstMvcApp/Program.cs" Line="23" Column="56" />
-      <File FileName="MyFirstMvcApp/Controllers/UserControllers.cs" Line="18" Column="30" />
-      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="13" Column="30" />
-      <File FileName="MyFirstMvcApp/Controllers/StaticFilesController.cs" Line="12" Column="81" />
-      <File FileName="MyFirstMvcApp/Controllers/CardsController.cs" Line="21" Column="30" />
-      <File FileName="SUS.MvcFramework/Controller.cs" Line="20" Column="77" />
-      <File FileName="MyFirstMvcApp/Views/Shared/_Layout.html" Line="1" Column="1" />
+      <File FileName="MyFirstMvcApp/Program.cs" Line="12" Column="16" />
+      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="1" Column="14" />
+      <File FileName="MyFirstMvcApp/Controllers/StaticFilesController.cs" />
+      <File FileName="MyFirstMvcApp/Controllers/UsersController.cs" Line="24" Column="37" />
+      <File FileName="MyFirstMvcApp/Controllers/CardsController.cs" Line="1" Column="1" />
+      <File FileName="SUS.MvcFramework/Controller.cs" Line="37" Column="47" />
+      <File FileName="MyFirstMvcApp/Startup.cs" Line="20" Column="96" />
+      <File FileName="SUS.MvcFramework/IMvcApplication.cs" Line="14" Column="1" />
+      <File FileName="SUS.MvcFramework/Host.cs" Line="22" Column="1" />
+      <File FileName="SUS.HTTP/HttpServer.cs" Line="72" Column="58" />
+      <File FileName="SUS.HTTP/Route.cs" Line="12" Column="34" />
+      <File FileName="SUS.HTTP/HttpResponse.cs" Line="9" Column="29" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,15 +23,18 @@
               <Node name="MyFirstMvcApp" expanded="True">
                 <Node name="Controllers" expanded="True" />
                 <Node name="Views" expanded="True">
+                  <Node name="Cards" expanded="True" />
+                  <Node name="Home" expanded="True" />
                   <Node name="Shared" expanded="True" />
+                  <Node name="Users" expanded="True" />
                 </Node>
                 <Node name="wwwroot" expanded="True" />
               </Node>
             </Node>
-            <Node name="SUS.HTTP" expanded="True" />
-            <Node name="SUS.MvcFramework" expanded="True">
-              <Node name="Controller.cs" selected="True" />
+            <Node name="SUS.HTTP" expanded="True">
+              <Node name="HttpResponse.cs" selected="True" />
             </Node>
+            <Node name="SUS.MvcFramework" expanded="True" />
           </Node>
         </State>
       </Pad>
