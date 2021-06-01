@@ -9,12 +9,7 @@ namespace SUS.MvcFramework
     {
         public static async Task CreateHostAsync(List<Route> routeTable, int port = 3005)
         {
-            IHttpServer server = new HttpServer();
-
-            foreach (var route in routeTable)
-            {
-                server.AddRoute(route.Path, route.Action);
-            }
+            IHttpServer server = new HttpServer(routeTable);
 
             await server.StartAsync(port);
         }

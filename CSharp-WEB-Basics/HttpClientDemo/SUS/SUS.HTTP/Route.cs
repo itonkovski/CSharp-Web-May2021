@@ -1,7 +1,7 @@
 ﻿using System;
 using SUS.HTTP;
 
-namespace SUS.MvcFramework
+namespace SUS.HTTP
 {
     public class Route
     {
