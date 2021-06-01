@@ -22,3 +22,8 @@
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Cards/Add.html
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Cards/All.html
 /Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Cards/Collection.html
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/Views/Shared/_Layout.html
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap.min.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/wwwroot/css/custom.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/wwwroot/js/bootstrap.bundle.min.js
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/HttpClientDemo/SUS/MyFirstMvcApp/bin/Debug/netcoreapp3.1/wwwroot/js/custom.js
