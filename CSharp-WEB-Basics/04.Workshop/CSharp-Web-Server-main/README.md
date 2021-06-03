@@ -9,5 +9,22 @@ Steps to create a similar web server from scratch:
 3. Write a valid HTTP response and convert it to a byte array
 4. Add Content-Type and Content-Length headers (be careful with UTF8 characters)
 5. Read the request in chunks (1024 bytes each) and store it in a StringBuilder
-6. Extract separate Server and HTTP classes
+6. Extract separate server and HTTP classes
 7. Parse the HTTP request
+8. Create routing table which should allow various HTTP methods
+9. Make sure the HTTP server can populate the routing table
+10. Create specific HTTP response classes - TextResponse, for example
+11. Implement the ToString method for the HTTP response class
+
+Tasks:
+- Fully working routing system
+- Working controllers 
+- Views and HTML
+- Forms and user input
+- Cookies and state 
+- Reflection-based controllers
+- Dependency inversion concepts
+- Model binding
+- Views with models
+- Session and cache
+- Basic authentication

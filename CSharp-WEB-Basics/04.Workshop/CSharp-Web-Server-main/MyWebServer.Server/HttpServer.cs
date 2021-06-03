@@ -5,7 +5,7 @@
     using System.Net.Sockets;
     using System.Text;
     using System.Threading.Tasks;
-    using MyWebServer.Server.Http;
+    using MyWebServer.Server.Routing;
 
     public class HttpServer
     {
@@ -13,12 +13,22 @@
         private readonly int port;
         private readonly TcpListener listener;
 
-        public HttpServer(string ipAddress, int port)
+        public HttpServer(string ipAddress, int port, Action<IRoutingTable> routingTable)
         {
             this.ipAddress = IPAddress.Parse(ipAddress);
             this.port = port;
 
             listener = new TcpListener(this.ipAddress, port);
+        }
+
+        public HttpServer(int port, Action<IRoutingTable> routingTable) 
+            : this("127.0.0.1", port, routingTable)
+        {
+        }
+
+        public HttpServer(Action<IRoutingTable> routingTable)
+            : this(9090, routingTable)
+        {
         }
 
         public async Task Start()
@@ -38,7 +48,7 @@
 
                 Console.WriteLine(requestText);
 
-                var request = HttpRequest.Parse(requestText);
+                // var request = HttpRequest.Parse(requestText);
 
                 await WriteResponse(networkStream);
 
@@ -55,7 +65,7 @@
 
             var requestBuilder = new StringBuilder();
 
-            while (networkStream.DataAvailable)
+            do
             {
                 var bytesRead = await networkStream.ReadAsync(buffer, 0, bufferLength);
 
@@ -68,6 +78,7 @@
 
                 requestBuilder.Append(Encoding.UTF8.GetString(buffer, 0, bytesRead));
             }
+            while (networkStream.DataAvailable);
 
             return requestBuilder.ToString();
         }
@@ -89,8 +100,8 @@
 HTTP/1.1 200 OK
 Server: My Web Server
 Date: {DateTime.UtcNow:r}
-Content-Length: {contentLength}
 Content-Type: text/html; charset=UTF-8
+Content-Length: {contentLength}
 
 {content}";
 
