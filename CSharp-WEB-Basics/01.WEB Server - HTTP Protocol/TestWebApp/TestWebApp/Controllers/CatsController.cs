@@ -30,7 +30,7 @@ namespace TestWebApp.Controllers
 
             var cats = this.data
                 .AllCats()
-                .Select(c => new CatModel
+                .Select(c => new CatViewModel
                 {
                     Name = c.Name,
                     Age = c.Age,

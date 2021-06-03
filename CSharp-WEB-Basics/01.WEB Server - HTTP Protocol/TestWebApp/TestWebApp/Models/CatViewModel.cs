@@ -1,7 +1,7 @@
 ﻿using System;
 namespace TestWebApp.Models
 {
-    public class CatModel
+    public class CatViewModel
     {
         public string Name { get; set; }
 
