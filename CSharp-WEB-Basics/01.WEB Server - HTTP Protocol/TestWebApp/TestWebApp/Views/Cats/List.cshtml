@@ -1,6 +1,26 @@
-﻿<form method="post" action="/cats/search">
-    First name: <input type="text" name="FistName"/> <br />
-    Last name: <input type="text" name="LastName"/> <br />
-    Age: <input type="number" name="Age"/> <br />
-    <input type="submit" />
-</form>
+﻿@*<form method="post" action="/cats/search">
+        First name: <input type="text" name="FistName"/> <br />
+        Last name: <input type="text" name="LastName"/> <br />
+        Age: <input type="number" name="Age"/> <br />
+        <input type="submit" />
+    </form>*@
+
+@model List<CatModel>
+
+<h1>
+    @Model.Count cats in the system.
+</h1>
+
+@if (Model.Any())
+{
+<ul>
+    @foreach (var cat in Model)
+    {
+        <li>@cat.Name (@cat.Age years old )by @cat.Owner </li>
+    }
+</ul>
+}
+else
+{
+    <h3>No cats available</h3>
+}

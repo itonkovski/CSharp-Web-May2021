@@ -1,13 +1,10 @@
 ﻿<Properties StartupConfiguration="{2D7A91CB-648C-4E58-AC76-FB1FDE70DA8D}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="TestWebApp/Views/Cats/List.cshtml">
+  <MonoDevelop.Ide.Workbench ActiveDocument="TestWebApp/Data/DbContext.cs">
     <Files>
-      <File FileName="TestWebApp/Controllers/CatsController.cs" Line="18" Column="39" />
-      <File FileName="TestWebApp/Views/Cats/List.cshtml" Line="6" Column="8" />
-      <File FileName="TestWebApp/Views/Cats/Search.cshtml" />
-      <File FileName="TestWebApp/Controllers/AccountController.cs" />
-      <File FileName="TestWebApp/Views/Home/Index.cshtml" />
-      <File FileName="TestWebApp/Controllers/HomeController.cs" />
-      <File FileName="TestWebApp/Startup.cs" />
+      <File FileName="TestWebApp/Models/CatModel.cs" Line="1" Column="1" />
+      <File FileName="TestWebApp/Controllers/CatsController.cs" Line="41" Column="29" />
+      <File FileName="TestWebApp/Views/Cats/List.cshtml" Line="25" Column="26" />
+      <File FileName="TestWebApp/Data/DbContext.cs" Line="14" Column="49" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,11 +12,12 @@
           <Node name="TestWebApp" expanded="True">
             <Node name="TestWebApp" expanded="True">
               <Node name="Controllers" expanded="True" />
+              <Node name="Data" expanded="True">
+                <Node name="DbContext.cs" selected="True" />
+              </Node>
               <Node name="Models" expanded="True" />
               <Node name="Views" expanded="True">
-                <Node name="Cats" expanded="True">
-                  <Node name="List.cshtml" selected="True" />
-                </Node>
+                <Node name="Cats" expanded="True" />
               </Node>
             </Node>
           </Node>
