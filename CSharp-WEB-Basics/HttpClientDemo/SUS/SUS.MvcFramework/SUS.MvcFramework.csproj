@@ -7,4 +7,10 @@
   <ItemGroup>
     <ProjectReference Include="..\SUS.HTTP\SUS.HTTP.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="ViewEngine\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp" Version="3.9.0" />
+  </ItemGroup>
 </Project>
