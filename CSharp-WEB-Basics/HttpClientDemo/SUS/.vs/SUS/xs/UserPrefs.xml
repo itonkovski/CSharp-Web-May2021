@@ -1,34 +1,42 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework/ViewEngine/IView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework.Tests/SusViewEngineTests.cs">
     <Files>
-      <File FileName="SUS.MvcFramework.Tests/ViewTests/CleanHtml.html" Line="12" Column="30" />
-      <File FileName="SUS.MvcFramework.Tests/ViewTests/CleanHtml.Result.html" Line="12" Column="30" />
-      <File FileName="SUS.MvcFramework.Tests/SusViewEngineTests.cs" Line="1" Column="1" />
-      <File FileName="SUS.MvcFramework/ViewEngine/SusViewEngine.cs" Line="18" Column="1" />
-      <File FileName="SUS.MvcFramework/ViewEngine/IViewEngine.cs" Line="1" Column="1" />
-      <File FileName="SUS.MvcFramework/ViewEngine/IView.cs" Line="6" Column="1" />
+      <File FileName="SUS.MvcFramework/ViewEngine/SusViewEngine.cs" Line="45" Column="19" />
+      <File FileName="SUS.MvcFramework.Tests/SusViewEngineTests.cs" Line="47" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="SUS" expanded="True">
-            <Node name="Apps" expanded="True" />
-            <Node name="SUS.HTTP" expanded="True" />
-            <Node name="SUS.MvcFramework" expanded="True">
-              <Node name="ViewEngine" expanded="True">
-                <Node name="IView.cs" selected="True" />
+            <Node name="Apps" expanded="True">
+              <Node name="MyFirstMvcApp" expanded="True">
+                <Node name="Views" expanded="True">
+                  <Node name="Home" expanded="True" />
+                </Node>
               </Node>
+            </Node>
+            <Node name="SUS.MvcFramework" expanded="True">
+              <Node name="ViewEngine" expanded="True" />
             </Node>
             <Node name="SUS.MvcFramework.Tests" expanded="True">
               <Node name="ViewTests" expanded="True" />
+              <Node name="SusViewEngineTests.cs" selected="True" />
             </Node>
           </Node>
         </State>
       </Pad>
       <Pad Id="MonoDevelop.UnitTesting.TestPad">
         <State name="__root__">
-          <Node name="SUS" expanded="True" selected="True" />
+          <Node name="SUS" expanded="True">
+            <Node name="SUS.MvcFramework.Tests" expanded="True">
+              <Node name="SUS.MvcFramework.Tests" expanded="True">
+                <Node name="SusViewEngineTests" expanded="True">
+                  <Node name="TestGetHtml(fileName: &quot;ViewModel&quot;)" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
