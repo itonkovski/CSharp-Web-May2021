@@ -948,7 +948,7 @@
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "/Users/ivaylotonkovski/.config/NuGet/NuGet.Config"
+        "/Users/ivaylotonkovski/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.0"

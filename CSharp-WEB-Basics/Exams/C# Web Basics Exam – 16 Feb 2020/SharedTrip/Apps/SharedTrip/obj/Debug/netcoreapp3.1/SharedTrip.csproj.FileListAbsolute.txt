@@ -1,73 +1,180 @@
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\de\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\es\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\it\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\SUS.HTTP.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\SUS.MvcFramework.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.csprojAssemblyReference.cache
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.AssemblyInfoInputs.cache
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\obj\Debug\netcoreapp3.1\SharedTrip.AssemblyInfo.cs
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Abstractions.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Relational.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.Identity.Client.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.Collections.Immutable.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.Configuration.ConfigurationManager.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.Diagnostics.DiagnosticSource.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.Runtime.Caching.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.Security.Cryptography.ProtectedData.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\System.Security.Permissions.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\Microsoft.Data.SqlClient.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-C:\Users\Mariela\Desktop\Exam-Preparation\Apps\SharedTrip\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SUS.HTTP.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SUS.MvcFramework.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.csprojAssemblyReference.cache
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.AssemblyInfoInputs.cache
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.AssemblyInfo.cs
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+C:/Users/Mariela/Desktop/Exam-Preparation/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Home/Index.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Shared/Error.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Shared/_Layout.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Trips/Add.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Trips/All.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Trips/Details.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Users/Login.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Views/Users/Register.cshtml
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-grid.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-grid.css.map
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-grid.min.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-grid.min.css.map
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-reboot.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-reboot.css.map
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-reboot.min.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap-reboot.min.css.map
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap.css.map
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap.min.css
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/wwwroot/css/bootstrap.min.css.map
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SharedTrip.deps.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SharedTrip.runtimeconfig.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SharedTrip.runtimeconfig.dev.json
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SharedTrip.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SharedTrip.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Bcl.AsyncInterfaces.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Bcl.HashCode.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.CodeAnalysis.CSharp.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Data.SqlClient.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.SqlServer.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Configuration.Binder.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Options.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Primitives.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.Identity.Client.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.JsonWebTokens.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Logging.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Microsoft.IdentityModel.Tokens.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/Newtonsoft.Json.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Collections.Immutable.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Diagnostics.DiagnosticSource.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.IdentityModel.Tokens.Jwt.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Runtime.Caching.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/cs/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/de/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/es/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/fr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/it/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ja/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ko/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pl/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/pt-BR/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/ru/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/tr/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hans/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/zh-Hant/Microsoft.CodeAnalysis.CSharp.resources.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/Microsoft.Data.SqlClient.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.0/System.Runtime.Caching.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SUS.HTTP.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SUS.MvcFramework.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SUS.HTTP.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/SUS.MvcFramework.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.csprojAssemblyReference.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.AssemblyInfoInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.AssemblyInfo.cs
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.csproj.CoreCompileInputs.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.csproj.CopyComplete
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.dll
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.pdb
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/obj/Debug/netcoreapp3.1/SharedTrip.genruntimeconfig.cache
+/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/Apps/SharedTrip/bin/Debug/netcoreapp3.1/System.Runtime.CompilerServices.Unsafe.dll
