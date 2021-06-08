@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "QaxIwuWBgLAq7h/vpNQgEBasZsnUAiP25D1bPZx9WYx+b3UMLog67jaOKTKs8QD4YxDW2KsiOvzkEcjMWJXV1A==",
+  "success": true,
+  "projectFilePath": "/Users/ivaylotonkovski/Documents/GitHub/CSharp-Web-Mai2021/CSharp-WEB-Basics/Exams/C# Web Basics Exam – 16 Feb 2020/SharedTrip/SUS.HTTP/SUS.HTTP.csproj",
+  "expectedPackageFiles": [
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/microsoft.netcore.platforms/1.1.0/microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "/usr/local/share/dotnet/sdk/NuGetFallbackFolder/netstandard.library/2.0.3/netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
