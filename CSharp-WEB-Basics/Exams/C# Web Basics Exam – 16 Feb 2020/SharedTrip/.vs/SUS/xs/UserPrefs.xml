@@ -1,12 +1,12 @@
 ﻿<Properties StartupConfiguration="{09EE7718-304A-451C-9B4D-91F7B58A0880}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apps/SharedTrip/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Apps/SharedTrip/Data/ApplicationDbContext.cs">
     <Files>
-      <File FileName="Apps/SharedTrip/Data/ApplicationDbContext.cs" Line="21" Column="118" />
-      <File FileName="Apps/SharedTrip/StartUp.cs" Line="1" Column="1" />
+      <File FileName="Apps/SharedTrip/Data/ApplicationDbContext.cs" Line="19" Column="55" />
+      <File FileName="Apps/SharedTrip/StartUp.cs" Line="19" Column="66" />
       <File FileName="Apps/SharedTrip/Program.cs" Line="13" Column="2" />
-      <File FileName="SUS.MvcFramework/Host.cs" Line="17" Column="56" />
-      <File FileName="SUS.HTTP/HttpServer.cs" Line="1" Column="1" />
-      <File FileName="Apps/SharedTrip/Controllers/HomeController.cs" Line="8" Column="10" />
+      <File FileName="Apps/SharedTrip/Controllers/HomeController.cs" Line="15" Column="1" />
+      <File FileName="Apps/SharedTrip/Controllers/UsersController.cs" Line="69" Column="34" />
+      <File FileName="Apps/SharedTrip/Services/UsersService.cs" Line="46" Column="10" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -14,17 +14,25 @@
           <Node name="SUS" expanded="True">
             <Node name="Apps" expanded="True">
               <Node name="SharedTrip" expanded="True">
-                <Node name="Controllers" expanded="True">
-                  <Node name="HomeController.cs" selected="True" />
+                <Node name="Controllers" expanded="True" />
+                <Node name="Data" expanded="True">
+                  <Node name="ApplicationDbContext.cs" selected="True" />
                 </Node>
-                <Node name="Data" expanded="True" />
-                <Node name="Migrations" expanded="True" />
-                <Node name="Views" expanded="True" />
-                <Node name="wwwroot" expanded="True" />
+                <Node name="Services" expanded="True" />
+                <Node name="ViewModels" expanded="True">
+                  <Node name="Users" expanded="True" />
+                </Node>
+                <Node name="Views" expanded="True">
+                  <Node name="Home" expanded="True" />
+                  <Node name="Shared" expanded="True" />
+                  <Node name="Users" expanded="True" />
+                </Node>
               </Node>
             </Node>
             <Node name="SUS.HTTP" expanded="True" />
-            <Node name="SUS.MvcFramework" expanded="True" />
+            <Node name="SUS.MvcFramework" expanded="True">
+              <Node name="ViewEngine" expanded="True" />
+            </Node>
             <Node name="SUS.MvcFramework.Tests" expanded="True" />
           </Node>
         </State>

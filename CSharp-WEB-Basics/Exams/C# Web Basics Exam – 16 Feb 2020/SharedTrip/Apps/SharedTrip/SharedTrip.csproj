@@ -82,4 +82,9 @@
     </None>
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\" />
+    <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Users\" />
+  </ItemGroup>
 </Project>
