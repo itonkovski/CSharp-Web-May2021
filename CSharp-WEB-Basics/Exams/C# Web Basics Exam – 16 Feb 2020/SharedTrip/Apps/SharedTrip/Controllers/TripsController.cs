@@ -22,6 +22,12 @@ namespace SharedTrip.Controllers
             return this.View(trips);
         }
 
+        public HttpResponse Details(string tripId)
+        {
+            var trip = this.tripsService.GetDetails(tripId);
+            return this.View(trip);
+        }
+
         public HttpResponse Add()
         {
             return this.View();

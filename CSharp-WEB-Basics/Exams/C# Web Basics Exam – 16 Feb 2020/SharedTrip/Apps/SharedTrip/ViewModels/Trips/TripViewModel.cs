@@ -23,7 +23,5 @@ namespace SharedTrip.ViewModels.Trips
         public byte Seats { get; set; }
 
         public int UsedSeats { get; set; }
-
-        public string Details { get; set; }
     }
 }

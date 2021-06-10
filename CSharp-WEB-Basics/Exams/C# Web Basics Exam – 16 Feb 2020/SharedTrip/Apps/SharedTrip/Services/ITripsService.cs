@@ -9,5 +9,7 @@ namespace SharedTrip.Services
         void Create(AddTripInputModel trip);
 
         IEnumerable<TripViewModel> GetAll();
+
+        TripDetailsModel GetDetails(string id);
     }
 }
