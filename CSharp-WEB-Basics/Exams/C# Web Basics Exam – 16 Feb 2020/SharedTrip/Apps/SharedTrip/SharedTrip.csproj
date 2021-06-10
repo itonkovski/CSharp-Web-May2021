@@ -86,5 +86,6 @@
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\Users\" />
+    <Folder Include="ViewModels\Trips\" />
   </ItemGroup>
 </Project>
