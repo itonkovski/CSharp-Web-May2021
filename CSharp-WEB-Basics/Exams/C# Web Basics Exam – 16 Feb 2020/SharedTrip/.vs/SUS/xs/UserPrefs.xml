@@ -1,12 +1,18 @@
 ﻿<Properties StartupConfiguration="{09EE7718-304A-451C-9B4D-91F7B58A0880}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Apps/SharedTrip/Services/ITripsService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.HTTP/ResponseCookie.cs">
     <Files>
       <File FileName="Apps/SharedTrip/StartUp.cs" Line="20" Column="65" />
-      <File FileName="Apps/SharedTrip/Program.cs" Line="13" Column="2" />
+      <File FileName="Apps/SharedTrip/Program.cs" />
       <File FileName="Apps/SharedTrip/Controllers/UsersController.cs" Line="86" Column="36" />
       <File FileName="Apps/SharedTrip/Controllers/TripsController.cs" Line="55" Column="36" />
       <File FileName="Apps/SharedTrip/Services/ITripsService.cs" Line="11" Column="1" />
       <File FileName="Apps/SharedTrip/Services/TripService.cs" Line="23" Column="17" />
+      <File FileName="Apps/SharedTrip/ViewModels/Trips/TripViewModel.cs" Line="1" Column="1" />
+      <File FileName="Apps/SharedTrip/Views/Trips/All.cshtml" Line="1" Column="1" />
+      <File FileName="SUS.HTTP/Cookie.cs" Line="1" Column="1" />
+      <File FileName="SUS.HTTP/HttpRequest.cs" Line="1" Column="1" />
+      <File FileName="SUS.HTTP/HttpResponse.cs" Line="1" Column="1" />
+      <File FileName="SUS.HTTP/ResponseCookie.cs" Line="1" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -16,9 +22,7 @@
               <Node name="SharedTrip" expanded="True">
                 <Node name="Controllers" expanded="True" />
                 <Node name="Data" expanded="True" />
-                <Node name="Services" expanded="True">
-                  <Node name="ITripsService.cs" selected="True" />
-                </Node>
+                <Node name="Services" expanded="True" />
                 <Node name="ViewModels" expanded="True">
                   <Node name="Trips" expanded="True" />
                   <Node name="Users" expanded="True" />
@@ -31,7 +35,9 @@
                 </Node>
               </Node>
             </Node>
-            <Node name="SUS.HTTP" expanded="True" />
+            <Node name="SUS.HTTP" expanded="True">
+              <Node name="ResponseCookie.cs" selected="True" />
+            </Node>
             <Node name="SUS.MvcFramework" expanded="True">
               <Node name="ViewEngine" expanded="True" />
             </Node>
