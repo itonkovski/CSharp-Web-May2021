@@ -18,12 +18,22 @@ namespace SharedTrip.Controllers
 
         public HttpResponse All()
         {
+            if (!this.IsUserSignedIn())
+            {
+                this.Redirect("/Users/Login");
+            }
+
             var trips = this.tripsService.GetAll();
             return this.View(trips);
         }
 
         public HttpResponse Details(string tripId)
         {
+            if (!this.IsUserSignedIn())
+            {
+                this.Redirect("/Users/Login");
+            }
+
             var trip = this.tripsService.GetDetails(tripId);
             return this.View(trip);
         }
@@ -50,12 +60,22 @@ namespace SharedTrip.Controllers
 
         public HttpResponse Add()
         {
+            if (!this.IsUserSignedIn())
+            {
+                this.Redirect("/Users/Login");
+            }
+
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Add(AddTripInputModel input)
         {
+            if (!this.IsUserSignedIn())
+            {
+                this.Redirect("/Users/Login");
+            }
+
             if (string.IsNullOrEmpty(input.StartPoint))
             {
                 return this.Error("Starting point is required.");
