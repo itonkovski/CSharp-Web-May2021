@@ -28,6 +28,26 @@ namespace SharedTrip.Controllers
             return this.View(trip);
         }
 
+        public HttpResponse AddUserToTrip(string tripId)
+        {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
+            if (!this.tripsService.HasAvailableSeats(tripId))
+            {
+                return this.Error("There are no available seats.");
+            }
+
+            var userId = this.GetUserId();
+            if (!this.tripsService.AddUserToTrip(userId, tripId))
+            {
+                return this.Redirect("/Trips/Details?tripId=" + tripId);
+            }
+            return this.Redirect("/Trips/All");
+        }
+
         public HttpResponse Add()
         {
             return this.View();
