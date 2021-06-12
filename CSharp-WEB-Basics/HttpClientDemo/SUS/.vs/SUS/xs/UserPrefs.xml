@@ -1,15 +1,11 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework/Controller.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework/Host.cs">
     <Files>
-      <File FileName="MyFirstMvcApp/Startup.cs" Line="16" Column="27" />
-      <File FileName="SUS.HTTP/Route.cs" Line="1" Column="1" />
-      <File FileName="MyFirstMvcApp/Controllers/UsersController.cs" Line="1" Column="1" />
-      <File FileName="SUS.HTTP/HttpRequest.cs" Line="1" Column="1" />
-      <File FileName="SUS.HTTP/Header.cs" Line="1" Column="1" />
-      <File FileName="SUS.HTTP/HttpResponse.cs" Line="1" Column="1" />
-      <File FileName="SUS.MvcFramework/ViewEngine/ErrorView.cs" Line="1" Column="1" />
-      <File FileName="SUS.MvcFramework/Controller.cs" Line="1" Column="1" />
+      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="10" Column="23" />
+      <File FileName="MyFirstMvcApp/Startup.cs" Line="18" Column="13" />
+      <File FileName="SUS.MvcFramework/Host.cs" Line="38" Column="33" />
+      <File FileName="MyFirstMvcApp/Controllers/UsersController.cs" Line="19" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -17,26 +13,16 @@
           <Node name="SUS" expanded="True">
             <Node name="Apps" expanded="True">
               <Node name="MyFirstMvcApp" expanded="True">
-                <Node name="Controllers" expanded="True" />
+                <Node name="ViewModels" expanded="True" />
                 <Node name="Views" expanded="True">
-                  <Node name="Users" expanded="True" />
+                  <Node name="Home" expanded="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="SUS.HTTP" expanded="True" />
             <Node name="SUS.MvcFramework" expanded="True">
-              <Node name="ViewEngine" expanded="True" />
-              <Node name="Controller.cs" selected="True" />
-            </Node>
-            <Node name="SUS.MvcFramework.Tests" expanded="True">
-              <Node name="ViewTests" expanded="True" />
+              <Node name="Host.cs" selected="True" />
             </Node>
           </Node>
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="SUS" expanded="True" selected="True" />
         </State>
       </Pad>
     </Pads>
