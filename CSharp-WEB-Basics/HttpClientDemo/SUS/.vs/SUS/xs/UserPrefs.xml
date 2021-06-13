@@ -1,11 +1,11 @@
 ﻿<Properties StartupConfiguration="{96ED7638-F2F9-447D-90D2-5E8F887BF14D}|Default">
   <MonoDevelop.Ide.ItemProperties.Apps.MyFirstMvcApp PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="SUS.MvcFramework/Host.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MyFirstMvcApp/Controllers/HomeController.cs">
     <Files>
-      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="10" Column="23" />
-      <File FileName="MyFirstMvcApp/Startup.cs" Line="18" Column="13" />
-      <File FileName="SUS.MvcFramework/Host.cs" Line="38" Column="33" />
-      <File FileName="MyFirstMvcApp/Controllers/UsersController.cs" Line="19" Column="19" />
+      <File FileName="MyFirstMvcApp/Controllers/HomeController.cs" Line="13" Column="1" />
+      <File FileName="MyFirstMvcApp/Startup.cs" Line="19" Column="10" />
+      <File FileName="SUS.MvcFramework/Host.cs" Line="67" Column="74" />
+      <File FileName="SUS.MvcFramework/Controller.cs" Line="17" Column="15" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -13,15 +13,16 @@
           <Node name="SUS" expanded="True">
             <Node name="Apps" expanded="True">
               <Node name="MyFirstMvcApp" expanded="True">
+                <Node name="Controllers" expanded="True">
+                  <Node name="HomeController.cs" selected="True" />
+                </Node>
                 <Node name="ViewModels" expanded="True" />
                 <Node name="Views" expanded="True">
                   <Node name="Home" expanded="True" />
                 </Node>
               </Node>
             </Node>
-            <Node name="SUS.MvcFramework" expanded="True">
-              <Node name="Host.cs" selected="True" />
-            </Node>
+            <Node name="SUS.MvcFramework" expanded="True" />
           </Node>
         </State>
       </Pad>
