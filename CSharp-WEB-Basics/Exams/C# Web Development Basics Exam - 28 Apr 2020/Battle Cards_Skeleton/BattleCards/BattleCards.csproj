@@ -102,6 +102,7 @@
   <ItemGroup>
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
+    <Folder Include="ViewModels\Users\" />
   </ItemGroup>
 
 </Project>
