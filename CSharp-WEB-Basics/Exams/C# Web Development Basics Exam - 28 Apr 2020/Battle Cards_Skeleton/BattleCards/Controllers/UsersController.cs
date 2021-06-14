@@ -21,6 +21,18 @@ namespace BattleCards.Controllers
             return this.View();
         }
 
+        [HttpPost]
+        public HttpResponse Login(string username, string password)
+        {
+            var userId = this.usersService.GetUserId(username, password);
+            if (userId == null)
+            {
+                return this.Error("Invalid username or password");
+            }
+            this.SignIn(userId);
+            return this.Redirect("/Cards/All");
+        }
+
         public HttpResponse Register()
         {
             return this.View();

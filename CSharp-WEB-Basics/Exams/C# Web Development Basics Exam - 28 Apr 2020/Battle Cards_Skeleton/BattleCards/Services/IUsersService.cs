@@ -9,6 +9,6 @@ namespace BattleCards.Services
 
         bool IsEmailAvailable(string email);
 
-        //string GetUserId(string username, string password);
+        string GetUserId(string username, string password);
     }
 }

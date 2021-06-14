@@ -38,15 +38,15 @@ namespace BattleCards.Services
             return !this.db.Users.Any(x => x.Email == email);
         }
 
-        //public string GetUserId(string username, string password)
-        //{
-        //    var user = this.db.Users.FirstOrDefault(x => x.Username == username);
-        //    if (user?.Password != ComputeHash(password))
-        //    {
-        //        return null;
-        //    }
-        //    return user.Id;
-        //}
+        public string GetUserId(string username, string password)
+        {
+            var user = this.db.Users.FirstOrDefault(x => x.Username == username);
+            if (user?.Password != ComputeHash(password))
+            {
+                return null;
+            }
+            return user.Id;
+        }
 
         private static string ComputeHash(string input)
         {
