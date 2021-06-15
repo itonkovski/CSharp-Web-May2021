@@ -67,9 +67,13 @@ namespace BattleCards.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<int>("Role")
+                        .HasColumnType("int");
+
                     b.Property<string>("Username")
-                        .HasColumnType("nvarchar(20)")
-                        .HasMaxLength(20);
+                        .IsRequired()
+                        .HasColumnType("nvarchar(10)")
+                        .HasMaxLength(10);
 
                     b.HasKey("Id");
 
@@ -94,13 +98,13 @@ namespace BattleCards.Migrations
             modelBuilder.Entity("BattleCards.Data.UserCard", b =>
                 {
                     b.HasOne("BattleCards.Data.Card", "Card")
-                        .WithMany("Cards")
+                        .WithMany("Users")
                         .HasForeignKey("CardId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("BattleCards.Data.User", "User")
-                        .WithMany("Users")
+                        .WithMany("Cards")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();

@@ -103,6 +103,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="Services\" />
     <Folder Include="ViewModels\Users\" />
+    <Folder Include="ViewModels\Cards\" />
   </ItemGroup>
 
 </Project>

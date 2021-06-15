@@ -29,9 +29,10 @@ namespace BattleCards.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(nullable: false),
-                    Username = table.Column<string>(maxLength: 20, nullable: true),
+                    Username = table.Column<string>(maxLength: 10, nullable: false),
                     Email = table.Column<string>(nullable: false),
-                    Password = table.Column<string>(nullable: false)
+                    Password = table.Column<string>(nullable: false),
+                    Role = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {

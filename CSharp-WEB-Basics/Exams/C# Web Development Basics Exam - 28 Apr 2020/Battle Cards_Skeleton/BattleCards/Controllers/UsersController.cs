@@ -18,12 +18,22 @@ namespace BattleCards.Controllers
 
         public HttpResponse Login()
         {
+            if (this.IsUserLoggedIn())
+            {
+                return this.Redirect("/");
+            }
+
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Login(string username, string password)
         {
+            if (this.IsUserLoggedIn())
+            {
+                return this.Redirect("/");
+            }
+
             var userId = this.usersService.GetUserId(username, password);
             if (userId == null)
             {
@@ -35,6 +45,11 @@ namespace BattleCards.Controllers
 
         public HttpResponse Register()
         {
+            if (this.IsUserLoggedIn())
+            {
+                return this.Redirect("/");
+            }
+
             return this.View();
         }
 
@@ -80,14 +95,14 @@ namespace BattleCards.Controllers
             return this.Redirect("/Users/Login");
         }
 
-        //public HttpResponse Logout()
-        //{
-        //    if (!this.IsUserLoggedIn())
-        //    {
-        //        return this.Error("Only logged-in users can logout.");
-        //    }
-        //    this.SignOut();
-        //    return this.Redirect("/");
-        //}
+        public HttpResponse Logout()
+        {
+            if (!this.IsUserLoggedIn())
+            {
+                return this.Error("Only logged-in users can logout.");
+            }
+            this.SignOut();
+            return this.Redirect("/");
+        }
     }
 }

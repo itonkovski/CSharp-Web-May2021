@@ -17,7 +17,7 @@ namespace BattleCards.Data
 
         public Card()
         {
-            this.Cards = new HashSet<UserCard>();
+            this.Users = new HashSet<UserCard>();
         }
 
         public int Id { get; set; }
@@ -40,6 +40,6 @@ namespace BattleCards.Data
         [MaxLength(200)]
         public string Description { get; set; }
 
-        public virtual ICollection<UserCard> Cards { get; set; }
+        public virtual ICollection<UserCard> Users { get; set; }
     }
 }

@@ -20,7 +20,7 @@ namespace BattleCards.Data
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer("Server=localhost;Database=BattleCards;User Id = SA;Password = Qawsed12");
+                optionsBuilder.UseSqlServer("Server=localhost;Database=BattleCardsNew;User Id = SA;Password = Qawsed12");
             }
         }
 
