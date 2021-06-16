@@ -45,6 +45,18 @@ namespace BattleCards.Services
             this.db.SaveChanges();
         }
 
+        public void RemoveCardFromUserCollection(string userId, int cardId)
+        {
+            var userCard = this.db.UserCards.FirstOrDefault(x => x.UserId == userId && x.CardId == cardId);
+            if (userCard == null)
+            {
+                return;
+            }
+
+            this.db.UserCards.Remove(userCard);
+            this.db.SaveChanges();
+        }
+
         public IEnumerable<CardViewModel> GetAll()
         {
             return this.db.Cards.Select(x => new CardViewModel

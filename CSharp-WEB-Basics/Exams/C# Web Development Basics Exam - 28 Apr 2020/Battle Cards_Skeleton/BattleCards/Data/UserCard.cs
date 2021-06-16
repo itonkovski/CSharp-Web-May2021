@@ -12,10 +12,10 @@ namespace BattleCards.Data
         [Required]
         public string UserId { get; set; }
 
-        public User User { get; set; }
+        public virtual User User { get; set; }
 
         public int CardId { get; set; }
 
-        public Card Card { get; set; }
+        public virtual Card Card { get; set; }
     }
 }

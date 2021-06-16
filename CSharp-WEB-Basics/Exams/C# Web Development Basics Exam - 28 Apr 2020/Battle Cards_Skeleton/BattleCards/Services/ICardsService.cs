@@ -10,6 +10,8 @@ namespace BattleCards.Services
 
         void AddCardToUserCollection(string userId, int cardId);
 
+        void RemoveCardFromUserCollection(string userId, int cardId);
+
         IEnumerable<CardViewModel> GetAll();
 
         IEnumerable<CardViewModel> GetByUserId(string userId);

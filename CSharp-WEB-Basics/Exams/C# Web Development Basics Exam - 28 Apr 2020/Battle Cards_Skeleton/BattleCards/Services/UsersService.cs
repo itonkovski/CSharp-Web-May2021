@@ -3,6 +3,7 @@ using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
 using BattleCards.Data;
+using SIS.MvcFramework;
 
 namespace BattleCards.Services
 {
@@ -21,6 +22,7 @@ namespace BattleCards.Services
             {
                 Username = username,
                 Email = email,
+                Role = IdentityRole.User,
                 Password = ComputeHash(password),
             };
             this.db.Add(user);
