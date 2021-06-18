@@ -10,7 +10,7 @@ namespace SUS.MvcFramework
 {
     public static class Host
     {
-        public static async Task CreateHostAsync(IMvcApplication application, int port = 80)
+        public static async Task CreateHostAsync(IMvcApplication application, int port = 3007)
         {
             List<Route> routeTable = new List<Route>();
 
