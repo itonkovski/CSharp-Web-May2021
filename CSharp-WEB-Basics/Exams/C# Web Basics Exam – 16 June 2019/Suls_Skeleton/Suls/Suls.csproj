@@ -11,6 +11,8 @@
     <Folder Include="Services\" />
     <Folder Include="ViewModels\" />
     <Folder Include="ViewModels\Users\" />
+    <Folder Include="ViewModels\Problems\" />
+    <Folder Include="ViewModels\Submissions\" />
   </ItemGroup>
 
   <ItemGroup>
