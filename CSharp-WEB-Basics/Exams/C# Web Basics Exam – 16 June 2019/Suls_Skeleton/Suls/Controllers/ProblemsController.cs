@@ -16,12 +16,21 @@ namespace Suls.Controllers
 
         public HttpResponse Create()
         {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Create(string name, int points)
         {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
             if (string.IsNullOrEmpty(name) ||
                 name.Length < 5 ||
                 name.Length > 20)
@@ -39,6 +48,11 @@ namespace Suls.Controllers
 
         public HttpResponse Details(string id)
         {
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
+
             var viewModel = this.problemsService.GetById(id);
             return this.View(viewModel);
         }

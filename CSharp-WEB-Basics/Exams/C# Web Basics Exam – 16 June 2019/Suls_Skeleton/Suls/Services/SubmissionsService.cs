@@ -33,5 +33,12 @@ namespace Suls.Services
             this.db.Submissions.Add(submission);
             this.db.SaveChanges();
         }
+
+        public void Delete(string id)
+        {
+            var submission = this.db.Submissions.Find(id);
+            this.db.Submissions.Remove(submission);
+            this.db.SaveChanges();
+        }
     }
 }
