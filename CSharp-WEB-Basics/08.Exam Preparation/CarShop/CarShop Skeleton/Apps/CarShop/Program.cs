@@ -8,7 +8,7 @@ namespace CarShop
     {
         public static async Task Main(string[] args)
         {
-            await Host.CreateHostAsync(new Startup());
+            await Host.CreateHostAsync(new Startup(), 3008);
         }
     }
 }
