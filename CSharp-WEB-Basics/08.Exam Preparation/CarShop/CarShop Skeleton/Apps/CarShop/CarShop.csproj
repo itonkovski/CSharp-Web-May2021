@@ -59,6 +59,7 @@
   <ItemGroup>
     <Folder Include="Data\Models\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Users\" />
   </ItemGroup>
 
   <ItemGroup>
