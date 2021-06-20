@@ -31,7 +31,10 @@ namespace CarShop.Services
 
         public string GetUserId(string username, string password)
         {
-            throw new System.NotImplementedException();
+            var hashedPassword = ComputeHash(password);
+            var user = this.db.Users
+                .FirstOrDefault(x => x.Username == username && x.Password == hashedPassword);
+            return user?.Id;
         }
 
         public bool IsUserMechanic(string userId)

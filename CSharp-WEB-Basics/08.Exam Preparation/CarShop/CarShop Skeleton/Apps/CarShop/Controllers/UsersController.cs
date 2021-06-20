@@ -18,11 +18,17 @@ namespace CarShop.Controllers
 
         public HttpResponse Login() => View();
 
-        //[HttpPost]
-        //public HttpResponse Login()
-        //{
-
-        //}
+        [HttpPost]
+        public HttpResponse Login(LoginUserViewModel model)
+        {
+            var userId = this.usersService.GetUserId(model.Username, model.Password);
+            if (userId == null)
+            {
+                return this.Error("Invalid username or password.");
+            }
+            this.SignIn(userId);
+            return this.Redirect("/Cars/All");
+        }
 
         public HttpResponse Register() => View();
 
