@@ -13,6 +13,9 @@
   <ItemGroup>
     <Folder Include="Migrations\" />
     <Folder Include="ViewModels\" />
+    <Folder Include="ViewModels\Users\" />
+    <Folder Include="ViewModels\Repositories\" />
+    <Folder Include="ViewModels\Commits\" />
   </ItemGroup>
 
   <ItemGroup>

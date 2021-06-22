@@ -1,13 +1,15 @@
-﻿namespace Git.Services
+﻿using Git.ViewModels.Users;
+
+namespace Git.Services
 {
     public interface IUsersService
     {
-        string CreateUser(string username, string email, string password);
+        void CreateUser(RegisterUserInputModel model);
 
-        bool IsEmailAvailable(string email);
+        bool IsEmailAvailable(RegisterUserInputModel model);
 
-        string GetUserId(string username, string password);
+        string GetUserId(LoginUserInputModel model);
 
-        bool IsUsernameAvailable(string username);
+        bool IsUsernameAvailable(RegisterUserInputModel model);
     }
 }
