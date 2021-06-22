@@ -6,7 +6,7 @@ namespace CarShop.Services
 {
     public interface ICarsService
     {
-        void Create(string userId, AddCarViewModel model);
+        void Create(string userId, AddCarInputModel model);
 
         IEnumerable<CarViewModel> GetAll();
     }

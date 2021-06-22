@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Text.RegularExpressions;
 using CarShop.Data;
+using CarShop.Data.Models;
 using CarShop.Services;
 using CarShop.ViewModels.Cars;
 using SUS.HTTP;
@@ -23,57 +24,81 @@ namespace CarShop.Controllers
 
         public HttpResponse Add()
         {
+            var userId = this.GetUserId();
             if (!this.IsUserSignedIn())
             {
                 return this.Redirect("/Users/Login");
+            }
+
+            if (this.usersService.IsUserMechanic(userId))
+            {
+                return this.Redirect("/");
             }
             return this.View();
         }
 
         [HttpPost]
-        public HttpResponse Add(AddCarViewModel model)
+        public HttpResponse Add(AddCarInputModel model)
         {
-            ////var userId = this.GetUserId();
-            ////if (this.IsUserSignedIn() ||
-            ////    !this.usersService.IsUserMechanic(userId))
-            ////{
-
-            ////}
-            //if (!this.IsUserSignedIn())
+            //var userId = this.GetUserId();
+            //if (this.IsUserSignedIn() ||
+            //    !this.usersService.IsUserMechanic(userId))
             //{
-            //    return this.Redirect("/Users/Login");
-            //}
 
-            //if (string.IsNullOrEmpty(model.Model) ||
-            //    model.Model.Length < 5 ||
-            //    model.Model.Length > 20)
-            //{
-            //    return this.Error("Model should be between 5 and 20 characters long.");
             //}
+            var userId = GetUserId();
+            if (!this.IsUserSignedIn())
+            {
+                return this.Redirect("/Users/Login");
+            }
 
-            //if (model.Year < 1900 || model.Year > 2100)
-            //{
-            //    return this.Error("The year should be between 1900 and 2100.");
-            //}
+            if (this.usersService.IsUserMechanic(userId))
+            {
+                return this.Redirect("/");
+            }
 
-            //if (string.IsNullOrEmpty(model.Image))
-            //{
-            //    return this.Error("Image needs to be uploaded.");
-            //}
+            if (string.IsNullOrEmpty(model.Model) ||
+                model.Model.Length < 5 ||
+                model.Model.Length > 20)
+            {
+                return this.Error("Model should be between 5 and 20 characters long.");
+            }
 
-            //if (!Uri.TryCreate(model.Image, UriKind.Absolute, out _))
-            //{
-            //    return this.Error("Image url should be valid.");
-            //}
+            if (model.Year < 1900 || model.Year > 2100)
+            {
+                return this.Error("The year should be between 1900 and 2100.");
+            }
 
-            ////!Regex.IsMatch(model.PlateNumber, @"[A-Z]{2}[0-9]{4}[A-Z]{2}")
-            //if (string.IsNullOrEmpty(model.PlateNumber))
-            //{
-            //    return this.Error($"Car plate number {model.PlateNumber} is not valid. It should be in format 'AA0000AA'.");
-            //}
+            if (string.IsNullOrEmpty(model.Image))
+            {
+                return this.Error("Image needs to be uploaded.");
+            }
+
+            if (!Uri.TryCreate(model.Image, UriKind.Absolute, out _))
+            {
+                return this.Error("Image url should be valid.");
+            }
+
+            //!Regex.IsMatch(model.PlateNumber, @"[A-Z]{2}[0-9]{4}[A-Z]{2}")
+            if (string.IsNullOrEmpty(model.PlateNumber))
+            {
+                return this.Error($"Car plate number {model.PlateNumber} is not valid. It should be in format 'AA0000AA'.");
+            }
+            
+            var car = new Car
+            {
+                Model = model.Model,
+                Year = model.Year,
+                PictureUrl = model.Image,
+                PlateNumber = model.PlateNumber,
+                OwnerId = userId
+            };
+
             //var userId = GetUserId();
             //this.carsService.Create(userId, model);
-            return this.Redirect("/Cars/All");
+            this.db.Cars.Add(car);
+            this.db.SaveChanges();
+            return this.Redirect("/");
         }
 
         public HttpResponse All()

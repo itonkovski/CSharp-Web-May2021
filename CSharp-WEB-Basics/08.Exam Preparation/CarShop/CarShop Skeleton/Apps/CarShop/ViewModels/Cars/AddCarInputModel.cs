@@ -1,7 +1,7 @@
 ﻿using System;
 namespace CarShop.ViewModels.Cars
 {
-    public class AddCarViewModel
+    public class AddCarInputModel
     {
         public string Model { get; set; }
 

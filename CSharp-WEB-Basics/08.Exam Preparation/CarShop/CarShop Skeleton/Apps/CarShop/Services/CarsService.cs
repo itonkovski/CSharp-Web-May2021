@@ -16,7 +16,7 @@ namespace CarShop.Services
             this.db = db;
         }
 
-        public void Create(string userId, AddCarViewModel model)
+        public void Create(string userId, AddCarInputModel model)
         {
             var car = new Car
             {
