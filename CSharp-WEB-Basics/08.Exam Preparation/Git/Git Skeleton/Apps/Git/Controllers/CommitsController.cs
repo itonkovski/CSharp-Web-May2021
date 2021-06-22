@@ -19,17 +19,41 @@ namespace Git.Controllers
 
         public HttpResponse All()
         {
-            return this.View();
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
+            var userId = this.GetUserId();
+            var viewModel = this.commitsService.GetAllCommits(userId);
+            return this.View(viewModel);
         }
 
-        public HttpResponse Create()
+        public HttpResponse Create(string id)
         {
-            return this.View();
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
+            var repositoryName = this.repositoriesService.GetRepoByName(id);
+
+            var viewModel = new CreateCommitViewModel
+            {
+                Id = id,
+                Name = repositoryName
+            };
+            return this.View(viewModel);
         }
 
         [HttpPost]
-        public HttpResponse Create(string repId, CreateCommitInputModel model)
+        public HttpResponse Create(string id, CreateCommitInputModel model)
         {
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
             if (string.IsNullOrEmpty(model.Description) ||
                 model.Description.Length < 5)
             {
@@ -37,8 +61,20 @@ namespace Git.Controllers
             }
 
             var userId = this.GetUserId();
-            this.commitsService.CreateCommit(userId, repId, model);
+            this.commitsService.CreateCommit(userId, id, model);
             return this.Redirect("/Repositories/All");
+        }
+
+        public HttpResponse Delete(string id)
+        {
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
+            this.commitsService.DeleteCommit(id);
+
+            return this.Redirect("/Commits/All");
         }
     }
 }

@@ -46,5 +46,15 @@ namespace Git.Services
             };
             return viewModel;
         }
+
+        public string GetRepoByName(string id)
+        {
+            var repositoryName = this.dbContext.Repositories
+                .Where(x => x.Id == id)
+                .Select(x => x.Name)
+                .FirstOrDefault();
+
+            return repositoryName;
+        }
     }
 }

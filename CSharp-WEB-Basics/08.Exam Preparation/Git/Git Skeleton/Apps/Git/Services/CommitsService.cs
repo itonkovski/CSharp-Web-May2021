@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using Git.Data;
 using Git.ViewModels.Commits;
 
@@ -25,6 +26,34 @@ namespace Git.Services
 
             this.dbContext.Commits.Add(commit);
             this.dbContext.SaveChanges();
+        }
+
+        public void DeleteCommit(string id)
+        {
+            var commit = this.dbContext.Commits
+                .Where(x => x.Id == id)
+                .FirstOrDefault();
+            this.dbContext.Remove(commit);
+            this.dbContext.SaveChanges();
+
+        }
+
+        public AllCommitsViewModel GetAllCommits(string userId)
+        {
+            var viewModel = new AllCommitsViewModel
+            {
+                Commits = this.dbContext.Commits
+                    .Where(x => x.CreatorId == userId)
+                    .Select(x => new CommitViewModel
+                    {
+                        Id = x.Id,
+                        Repository = x.Repository.Name,
+                        Description = x.Description,
+                        CreatedOn = x.CreatedOn.ToString()
+                    })
+                    .ToList()
+            };
+            return viewModel;
         }
     }
 }

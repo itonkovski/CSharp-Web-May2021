@@ -17,18 +17,33 @@ namespace Git.Controllers
 
         public HttpResponse All()
         {
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
             var viewModel = this.repositoriesService.GetAllRepositories();
             return this.View(viewModel);
         }
 
         public HttpResponse Create()
         {
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Create(RepositoryInputModel model)
         {
+            if (!IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
             if (string.IsNullOrEmpty(model.Name) ||
                 model.Name.Length < 3 ||
                 model.Name.Length > 10)

@@ -8,5 +8,7 @@ namespace Git.Services
         public void CreateRepository(string userId, RepositoryInputModel model);
 
         AllRepositoriesViewModel GetAllRepositories();
+
+        string GetRepoByName(string id);
     }
 }
