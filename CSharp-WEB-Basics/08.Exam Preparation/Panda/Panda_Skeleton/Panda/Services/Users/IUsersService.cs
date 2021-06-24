@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Panda.ViewModels.Users;
 
 namespace Panda.Services.Users
@@ -14,6 +15,10 @@ namespace Panda.Services.Users
         string GetUserId(LoginUserInputModel model);
 
         string GetUsername(string id);
+
+        string GetUserIdByUsername(string username);
+
+        ICollection<string> GetAllUsernames();
     }
 }
 

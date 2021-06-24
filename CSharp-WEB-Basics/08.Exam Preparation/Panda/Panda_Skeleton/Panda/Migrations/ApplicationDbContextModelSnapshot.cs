@@ -60,7 +60,7 @@ namespace Panda.Migrations
                     b.Property<decimal>("Free")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<DateTime?>("IssuedOn")
+                    b.Property<DateTime>("IssuedOn")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("PackageId")

@@ -1,11 +1,13 @@
-﻿using Panda.ViewModels.Receipts;
+﻿using System.Linq;
+using Panda.Data;
+using Panda.ViewModels.Receipts;
 
 namespace Panda.Services.Receipts
 {
     public interface IReceiptsService
     {
-        void Create(string packageId, string recepientId);
+        void CreateFromPackage(decimal weight, string packageId, string recipientId);
 
-        AllReceiptsViewModel GetAllReceipts(string userId);
+        IQueryable<Receipt> GetAll();
     }
 }

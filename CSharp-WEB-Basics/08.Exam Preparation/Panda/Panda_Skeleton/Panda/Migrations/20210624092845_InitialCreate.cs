@@ -50,7 +50,7 @@ namespace Panda.Migrations
                 {
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     Free = table.Column<decimal>(type: "decimal(18,2)", nullable: false),
-                    IssuedOn = table.Column<DateTime>(type: "datetime2", nullable: true),
+                    IssuedOn = table.Column<DateTime>(type: "datetime2", nullable: false),
                     RecipientId = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     PackageId = table.Column<string>(type: "nvarchar(450)", nullable: false)
                 },

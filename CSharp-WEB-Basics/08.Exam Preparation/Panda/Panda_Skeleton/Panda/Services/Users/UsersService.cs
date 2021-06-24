@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Security.Cryptography;
 using System.Text;
@@ -28,6 +29,13 @@ namespace Panda.Services.Users
             this.dbContext.SaveChanges();
         }
 
+        public ICollection<string> GetAllUsernames()
+        {
+            return this.dbContext.Users
+                .Select(x => x.Username)
+                .ToList();
+        }
+
         public string GetUserId(LoginUserInputModel model)
         {
             var hashedPassword = ComputeHash(model.Password);
@@ -35,6 +43,16 @@ namespace Panda.Services.Users
                 .FirstOrDefault(x => x.Username == model.Username && x.Password == hashedPassword);
 
             return user?.Id;
+        }
+
+        public string GetUserIdByUsername(string username)
+        {
+            var userId = this.dbContext.Users
+                .Where(x => x.Username == username)
+                .Select(x => x.Id)
+                .FirstOrDefault();
+
+            return userId;
         }
 
         public string GetUsername(string id)

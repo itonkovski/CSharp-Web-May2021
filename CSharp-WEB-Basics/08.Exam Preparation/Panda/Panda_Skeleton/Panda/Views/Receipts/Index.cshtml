@@ -12,7 +12,7 @@
                 </tr>
             </thead>
             <tbody>
-                @foreach (var receipt in Model)
+                @foreach (var receipt in Model.ReceiptViewModel())
                 {
                     <tr class="row">
                         <th scope="row" class="col-lg-4 d-flex justify-content-center">@receipt.Id</th>

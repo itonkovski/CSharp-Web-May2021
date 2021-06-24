@@ -18,12 +18,21 @@ namespace Panda.Controllers
 
         public HttpResponse Login()
         {
+            if (IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
             return this.View();
         }
 
         [HttpPost]
         public HttpResponse Login(LoginUserInputModel model)
         {
+            if (IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
             var userId = this.usersService.GetUserId(model);
 
             if (userId == null)
@@ -43,6 +52,11 @@ namespace Panda.Controllers
         [HttpPost]
         public HttpResponse Register(CreateUserInputModel model)
         {
+            if (IsUserSignedIn())
+            {
+                return this.Redirect("/");
+            }
+
             if (string.IsNullOrEmpty(model.Username) ||
                 model.Username.Length < 5 ||
                 model.Username.Length > 20)

@@ -1,5 +1,7 @@
 ﻿using System;
+using System.Linq;
 using Panda.Services.Receipts;
+using Panda.ViewModels.Receipts;
 using SUS.HTTP;
 using SUS.MvcFramework;
 
@@ -16,10 +18,20 @@ namespace Panda.Controllers
 
         public HttpResponse Index()
         {
-            var userId = this.GetUserId();
+            {
+                var viewModel = this.receiptsService
+                    .GetAll()
+                    .Select(
+                    x => new ReceiptViewModel
+                    {
+                        Id = x.Id,
+                        Fee = x.Free,
+                        IssuedOn = x.IssuedOn,
+                        //RecipientName = x.Recipient.Username,
+                    }).ToList();
 
-            var viewModel = this.receiptsService.GetAllReceipts(userId);
-            return this.View(viewModel);
+                return this.View(viewModel);
+            }
         }
     }
 }

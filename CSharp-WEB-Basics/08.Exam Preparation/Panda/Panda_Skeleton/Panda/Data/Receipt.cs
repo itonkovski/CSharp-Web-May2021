@@ -21,7 +21,7 @@ namespace Panda.Data
 
         public decimal Free { get; set; }
 
-        public DateTime? IssuedOn { get; set; }
+        public DateTime IssuedOn { get; set; }
 
         [Required]
         public string RecipientId { get; set; }

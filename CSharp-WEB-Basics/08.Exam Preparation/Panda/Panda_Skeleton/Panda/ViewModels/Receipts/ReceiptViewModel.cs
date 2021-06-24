@@ -7,7 +7,7 @@ namespace Panda.ViewModels.Receipts
 
         public decimal Fee { get; set; }
 
-        public string IssuedOn { get; set; }
+        public DateTime IssuedOn { get; set; }
 
         public string RecepientName { get; set; }
     }

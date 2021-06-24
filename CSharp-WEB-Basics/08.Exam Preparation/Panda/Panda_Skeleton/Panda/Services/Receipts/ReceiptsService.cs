@@ -14,40 +14,23 @@ namespace Panda.Services.Receipts
             this.dbContext = dbContext;
         }
 
-        public void Create(string packageId, string recepientId)
+        public void CreateFromPackage(decimal weight, string packageId, string recipientId)
         {
-            var package = this.dbContext.Packages
-                .Find(packageId);
-
             var receipt = new Receipt
             {
                 PackageId = packageId,
-                RecipientId = recepientId,
-                Free = package.Weight * 2.67m,
-                IssuedOn = DateTime.UtcNow
+                RecipientId = recipientId,
+                Free = weight * 2.67M,
+                IssuedOn = DateTime.UtcNow,
             };
 
             this.dbContext.Receipts.Add(receipt);
             this.dbContext.SaveChanges();
-                
         }
 
-        public AllReceiptsViewModel GetAllReceipts(string userId)
+        public IQueryable<Receipt> GetAll()
         {
-            var viewModel = new AllReceiptsViewModel
-            {
-                AllReceipts = this.dbContext.Receipts
-                    .Where(x => x.RecipientId == userId)
-                    .Select(x => new ReceiptViewModel
-                    {
-                        Id = x.Id,
-                        Fee = x.Free,
-                        IssuedOn = x.IssuedOn.ToString(),
-                        RecepientName = x.Recipient.Username
-                    })
-                    .ToList()
-            };
-            return viewModel;
+            return this.dbContext.Receipts;
         }
     }
 }
