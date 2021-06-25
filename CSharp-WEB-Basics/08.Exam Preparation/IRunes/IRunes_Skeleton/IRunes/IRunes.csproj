@@ -30,6 +30,10 @@
     <Folder Include="ViewModels\Users\" />
     <Folder Include="ViewModels\Albums\" />
     <Folder Include="ViewModels\Tracks\" />
+    <Folder Include="Services\Users\" />
+    <Folder Include="ViewModels\Home\" />
+    <Folder Include="Services\Albums\" />
+    <Folder Include="Services\Tracks\" />
   </ItemGroup>
 
   <ItemGroup>
@@ -85,6 +89,12 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
     <None Update="Views\Users\Register.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Tracks\Create.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="Views\Tracks\Details.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
   </ItemGroup>
