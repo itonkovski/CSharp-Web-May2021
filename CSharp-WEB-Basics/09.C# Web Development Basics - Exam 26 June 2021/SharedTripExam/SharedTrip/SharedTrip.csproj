@@ -112,5 +112,6 @@
     <Folder Include="Models\Users\" />
     <Folder Include="Services\" />
     <Folder Include="Services\Users\" />
+    <Folder Include="Services\Trips\" />
   </ItemGroup>
 </Project>
