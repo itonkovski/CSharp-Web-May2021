@@ -29,6 +29,7 @@ namespace SharedTrip.Data
         [Required]
         public string EndPoint { get; set; }
 
+        //typo mistake on the DepartureTime, which has been considered (solution working properly) during the creation of the ViewModels, Services and the Views.
         public DateTime DapartureTime { get; set; }
 
         public byte Seats { get; set; }
