@@ -2,6 +2,7 @@
 {
     using System.Collections.Generic;
     using Microsoft.EntityFrameworkCore;
+    using SharedTrip.Services.Users;
     using SUS.HTTP;
     using SUS.MvcFramework;
 
@@ -15,7 +16,7 @@
 
         public void ConfigureServices(IServiceCollection serviceCollection)
         {
-            //serviceCollection.Add<IUsersService, UsersService>();
+            serviceCollection.Add<IUsersService, UsersService>();
             //serviceCollection.Add<ITripsService, TripService>();
         }
     }
