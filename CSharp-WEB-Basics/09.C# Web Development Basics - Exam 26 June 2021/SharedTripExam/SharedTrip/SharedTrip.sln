@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.3
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SharedTrip", "SharedTrip.csproj", "{7604A82B-87C6-4D71-AB4C-B4E9E075F55D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7604A82B-87C6-4D71-AB4C-B4E9E075F55D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7604A82B-87C6-4D71-AB4C-B4E9E075F55D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7604A82B-87C6-4D71-AB4C-B4E9E075F55D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7604A82B-87C6-4D71-AB4C-B4E9E075F55D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3CF65EB-3917-4D47-A48D-28275FCC471B}
+	EndGlobalSection
+EndGlobal
