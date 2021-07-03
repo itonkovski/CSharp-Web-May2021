@@ -4,3 +4,35 @@
 <h1>@ViewData["Title"]</h1>
 
 <p>Our team will be glad to give you the services you need for your bike.</p>
+
+<form>
+    <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect1">Number of bikes for fixing</label>
+        <select class="form-control" id="exampleFormControlSelect1">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlSelect2">Services</label>
+        <select multiple class="form-control" id="exampleFormControlSelect2">
+            <option>New wheels</option>
+            <option>Fix gears</option>
+            <option>Brakes</option>
+            <option>Basic service</option>
+            <option>Special service</option>
+        </select>
+    </div>
+    <div class="form-group">
+        <label for="exampleFormControlTextarea1">Example textarea</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+    <button type="button" class="btn btn-primary">Submit</button>
+</form>
