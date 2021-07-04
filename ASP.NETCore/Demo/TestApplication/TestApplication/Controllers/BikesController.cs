@@ -20,5 +20,8 @@ namespace TestApplication.Controllers
         }
 
         public IActionResult Create() => View();
+
+        [HttpPost]
+        public IActionResult Create(BikeViewModel model) => Ok(model);
     }
 }
