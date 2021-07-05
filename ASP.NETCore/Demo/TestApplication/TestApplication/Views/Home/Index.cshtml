@@ -10,6 +10,17 @@
     <p>Check our bicycle workshop <a href="https://www.facebook.com/sykkelsjappe/">and book yourself an appointment.</a>.</p>
 </div>*@
 
+<div class="text-center">
+    @if (User.Identity.IsAuthenticated)
+    {
+        <h1 class="display-4">Welcome, @User.Identity.Name</h1>
+    }
+    else
+    {
+        <h1>Welcome random customer</h1>
+    }
+</div>
+
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
