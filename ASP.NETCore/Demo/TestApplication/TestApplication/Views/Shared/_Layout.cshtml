@@ -6,6 +6,7 @@
     <title>@ViewData["Title"] - IvarsSykkelSjappe</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
@@ -18,8 +19,7 @@
         </button>*@
                 <nav class="navbar navbar-light bg-light">
                     <a class="navbar-brand" asp-area="" asp-controller="Home">
-                        <img src="https://previews.dropbox.com/p/orig/ABPCFDsDHW_9yW5mBqteyNT8_bVXz6RaRV8gdhaZIJyyzTfM0sHq-QhoOSoYvPjQ83ueVFlAux8ZoHeW0n65FNhkg9n2Ldo4pdrtf-mtYh4pNDJusDJ7AJC4yYIj7EwuFxxm-04xI99y7TYnUwFGEujM8vI8GkvyeXwfAjskRWzr3BYH0K3PGDi1A7PQKkdTOql9TJRCo2gn4mmxTuCFT68QVjIKy1rEN07ppzSik6IzIDYe-fyeDGwkILuCM4SMOkY4no364lXpNwjbnO6WM96BA0te3y6x9kD_EvAJplDBtmnMm4kwgbXksvvTly6QbO57jK3YNQjpzzJFDeqXjFQq/p.svg?fv_content=true&size_mode=5" width="30" height="30" class="d-inline-block align-top" alt="">
-                        IvarsSykkelSjappe
+                        <img src="https://previews.dropbox.com/p/thumb/ABNKfWkQ-KIrAvaA5c7h2pefIxjIQ2oq2rdctpErMYO8q9jpPRVFVn4w_2SGXMShYDhRBuZprLZWjUq3w9lmONhd0tFuhBiENomDOgYqYbxrJzJ8hZaRv36_uklb2PIsNmKzU1e51h_LJrDAASzUCkm6TYEfqQquSHEK6ieYCXz1qz8O4uONoB8KIeoe3aj34-knRYi_9keBaXEOIhyoZS64PGOIE9C3EMHTgDz0maBBKogEEW8dG56OSIQm2G7-cfLtrX2CcNVAFqga2v36MWhK3DESIA19-SHv2G0RpVmrY6Qr6oZuAlV7-jTtC6_xHnKOlu8HSnWKkdc9_YOEaiWPGZdIsyzgSPjZqM9SPUFupQ/p.png?fv_content=true&size_mode=5" width="30" height="30" class="d-inline-block align-top" alt="">                        
                     </a>
                 </nav>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
@@ -40,6 +40,8 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>
                         </li>
+                        <a class="nav-link" href="https://www.instagram.com/ivarssykkelsjappe/?hl=en"><i class="fa fa-instagram"></i></a>
+                        <a class="nav-link" href="https://www.facebook.com/sykkelsjappe/"><i class="fa fa-facebook"></i></a>
                         @RenderSection("Links", false)
                     </ul>
                 </div>
@@ -54,7 +56,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2021 - IvarsSykkelSjappe - <a asp-area="" asp-controller="Home" asp-action="Booking">Booking</a>
+            &copy; @DateTime.UtcNow.Year - Ivars Sykkel Sjappe - <a asp-area="" asp-controller="Home" asp-action="Booking">Booking</a>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

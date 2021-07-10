@@ -1,36 +1,47 @@
-﻿@model BikeViewModel
-
+﻿@model CreateBikeFormModel
 @{
-    ViewData["Title"] = "Create bike";
+    ViewData["Title"] = "Create your custome bicycle";
 }
-
-<form method="post">
-    <div class="form-row align-items-center">
-        <div class="col-auto my-1">
-            <label asp-for="Brand" for="formGroupExampleInput2">Choose brand</label>
-            <input asp-for="Brand" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Brand">
-        </div>
-        <div class="col-auto my-1">
-            <label class="mr-sm-2" for="inlineFormCustomSelect">Choose frame</label>
-            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-                <option selected>Choose...</option>
-                <option value="1">10inch</option>
-                <option value="2">13inc</option>
-                <option value="3">15inch</option>
-            </select>
-        </div>
-        <div class="col-auto my-1">
-            <label asp-for="Price" for="formGroupExampleInput2">Price of the bike</label>
-            <input asp-for="Price" type="text" class="form-control" id="formGroupExampleInput2" placeholder="Price">
-        </div>
-        <div class="col-auto my-1">
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </div>
-        <div class="col-auto my-1">
-            <div class="custom-control custom-checkbox mr-sm-2">
-                <input type="checkbox" class="custom-control-input" id="customControlAutosizing">
-                <label class="custom-control-label" for="customControlAutosizing">Remember my preference</label>
+<div class="row">
+    <div class="col-sm-12 offset-lg-2 col-lg-8 offset-xl-3 col-xl-6">
+        <h2 class="heading-margin text-center">Create a custom bike</h2>
+        <form method="post">
+            <div class="form-group">
+                <label asp-for="Brand"></label>
+                <input asp-for="Brand" class="form-control" placeholder="Brand">
+                <span asp-validation-for="Brand" class="small text-danger"></span>
             </div>
-        </div>
+            <div class="form-group">
+                <label asp-for="Model"></label>
+                <input asp-for="Model" class="form-control" placeholder="Model">
+                <span asp-validation-for="Model" class="small text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Description"></label>
+                <textarea asp-for="Description" class="form-control" rows="5" placeholder="Description"></textarea>
+                <span asp-validation-for="Description" class="small text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ImageUrl"></label>
+                <input asp-for="ImageUrl" class="form-control" placeholder="Upload an image"></input>
+                <span asp-validation-for="ImageUrl" class="small text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Year"></label>
+                <input asp-for="Year" class="form-control" placeholder="@DateTime.UtcNow.Year"></input>
+                <span asp-validation-for="Year" class="small text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CategoryId">Select category</label>
+                <select asp-for="CategoryId" class="form-control">
+                    @foreach (var category in Model.Categories)
+                    {
+                        <option value="@category.Id">@category.Name</option>
+                    }
+                </select>
+                <span asp-validation-for="CategoryId" class="small text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Save</button>
+        </form>
     </div>
-</form>
+</div>

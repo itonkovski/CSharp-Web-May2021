@@ -7,6 +7,9 @@
 
   <ItemGroup>
     <None Remove="Microsoft.EntityFrameworkCore.Sqlite" />
+    <None Remove="Data\Models\" />
+    <None Remove="Infrastructure\" />
+    <None Remove="Models\Bikes\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -54,5 +57,8 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Bikes\" />
+    <Folder Include="Data\Models\" />
+    <Folder Include="Infrastructure\" />
+    <Folder Include="Models\Bikes\" />
   </ItemGroup>
 </Project>
