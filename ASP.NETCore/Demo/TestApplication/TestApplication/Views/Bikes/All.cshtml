@@ -1,4 +1,5 @@
-﻿@{
+﻿@*@model BikeViewModel*@
+@{
     ViewData["Title"] = "All available Custome bikes:";
 }
 @*<h2 class="heading-margin text-center">Availlable custome bikes:</h2>*@
@@ -34,6 +35,7 @@
         </div>
     </div>
 </div>*@
+
 <section class="py-5">
     <div class="container">
         <h1 style="margin: 2%; text-align: center;">All available bikes</h1>
@@ -58,7 +60,7 @@
                             <td>@bike.Category</td>
                             <td>
                                 <div class="button-holder">
-                                    <a href="/Bikes/All?bikeId=@bike.Id" class="btn btn-info text-uppercase">Info</a>
+                                    <a href="/Bikes/Details?bikeId=@bike.Id" class="btn btn-info text-uppercase">Info</a>
                                 </div>
                             </td>
                         </tr>
@@ -68,3 +70,16 @@
         </div>
     </div>
 </section>
+
+
+@*<div class="carousel slide" data-ride="carousel" data-interval="2000" style="width:192px;">
+    <div class="carousel-inner">
+        @foreach (var bike in Model)
+        {
+            <div class="carousel-item @(bike == Model.Employees.First() ? "active" : "")">
+                <img src="~/images/@employee.PhotoPath" alt="@employee.FirstName @employee.LastName">
+            </div>
+        }
+    </div>
+</div>*@
+    

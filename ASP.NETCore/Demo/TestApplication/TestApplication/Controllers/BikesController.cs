@@ -31,6 +31,25 @@ namespace TestApplication.Controllers
             return this.View(bikes);
         }
 
+        public IActionResult Details(string id)
+        {
+            //var bikesQuery = this.data.Bikes.ToArray();
+            var bike = this.data.Bikes
+                .Where(x => x.Id == id)
+                .Select(x => new BikeDetailsViewModel
+                {
+                    Id = x.Id,
+                    ImageUrl = x.ImageUrl,
+                    Brand = x.Brand,
+                    Model = x.Model,
+                    Year = x.Year,
+                    Category = x.Category.Name,
+                    Description = x.Description
+                })
+                .FirstOrDefault();
+            return this.View(bike);
+        }
+
         public IActionResult Create() => View(new CreateBikeFormModel
         {
             Categories = this.GetBikeCategories()
