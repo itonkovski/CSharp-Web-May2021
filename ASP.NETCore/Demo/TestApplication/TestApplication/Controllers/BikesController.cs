@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using TestApplication.Data;
 using TestApplication.Data.Models;
-using TestApplication.Models;
 using TestApplication.Models.Bikes;
-using TestApplication.Services.Bikes;
 
 namespace TestApplication.Controllers
 {
