@@ -1,22 +1,8 @@
-﻿@model List<BikeViewModel>
-
-@{
-    ViewData["Title"] = "All bikes";
+﻿@{
+    ViewData["Title"] = "All available Custome bikes:";
 }
-<h1>
-    All availlable bikes:
-</h1>
-
-<ul>
-    @foreach (var bike in Model)
-    {
-        <li>
-            @bike.Brand => @bike.Price
-        </li>
-    }
-</ul>
-
-<div class="card-deck">
+@*<h2 class="heading-margin text-center">Availlable custome bikes:</h2>*@
+@*<div class="card-deck">
     <div class="card">
         <img class="card-img-top" src="https://images.auctionet.com/thumbs/medium_item_663918_0dc75f0d56.JPG" alt="DBS">
         <div class="card-body">
@@ -47,4 +33,38 @@
             <small class="text-muted">Last updated 7 mins ago</small>
         </div>
     </div>
-</div>
+</div>*@
+<section class="py-5">
+    <div class="container">
+        <h1 style="margin: 2%; text-align: center;">All available bikes</h1>
+        <div style="padding: 5%;">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col">StartPoint</th>
+                        <th scope="col">EndPoint</th>
+                        <th scope="col">DepartureTime</th>
+                        <th scope="col">Seats</th>
+                        <th scope="col">Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var bike in Model)
+                    {
+                        <tr>
+                            <th scope="row">@bike.Brand</th>
+                            <td>@bike.Model</td>
+                            <td>@bike.Year</td>
+                            <td>@bike.Category</td>
+                            <td>
+                                <div class="button-holder">
+                                    <a href="/Bikes/All?bikeId=@bike.Id" class="btn btn-info text-uppercase">Info</a>
+                                </div>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>

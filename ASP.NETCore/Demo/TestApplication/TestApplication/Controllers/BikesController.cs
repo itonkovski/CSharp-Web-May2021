@@ -6,6 +6,7 @@ using TestApplication.Data;
 using TestApplication.Data.Models;
 using TestApplication.Models;
 using TestApplication.Models.Bikes;
+using TestApplication.Services.Bikes;
 
 namespace TestApplication.Controllers
 {
@@ -20,7 +21,17 @@ namespace TestApplication.Controllers
 
         public IActionResult All()
         {
-            return View();
+            var bikes = this.data.Bikes
+                .Select(x => new BikeViewModel
+                {
+                    Id = x.Id,
+                    Brand = x.Brand,
+                    Model = x.Model,
+                    Year = x.Year,
+                    Category = x.Category.Name
+                })
+                .ToList();
+            return this.View(bikes);
         }
 
         public IActionResult Create() => View(new CreateBikeFormModel

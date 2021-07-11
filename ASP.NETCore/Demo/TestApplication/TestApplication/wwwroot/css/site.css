@@ -86,3 +86,14 @@ body {
 .fa:hover {
   opacity: 0.7;
 }
+
+.carousel-item {
+    height: 500px;
+}
+
+.carousel-item image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 500px;
+}
