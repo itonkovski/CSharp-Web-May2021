@@ -18,7 +18,8 @@ namespace TestApplication.Controllers
 
         public IActionResult All()
         {
-            var bikes = this.data.Bikes
+            var bikes = this.data
+                .Bikes
                 .Select(x => new BikeViewModel
                 {
                     Id = x.Id,
@@ -28,12 +29,11 @@ namespace TestApplication.Controllers
                     Category = x.Category.Name
                 })
                 .ToList();
-            return this.View(bikes);
+            return View(bikes);
         }
 
         public IActionResult Details(string id)
         {
-            //var bikesQuery = this.data.Bikes.ToArray();
             var bike = this.data.Bikes
                 .Where(x => x.Id == id)
                 .Select(x => new BikeDetailsViewModel
@@ -47,7 +47,7 @@ namespace TestApplication.Controllers
                     Description = x.Description
                 })
                 .FirstOrDefault();
-            return this.View(bike);
+            return View(bike);
         }
 
         public IActionResult Create() => View(new CreateBikeFormModel

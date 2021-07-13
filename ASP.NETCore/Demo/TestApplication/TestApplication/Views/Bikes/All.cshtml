@@ -1,4 +1,4 @@
-﻿@*@model BikeViewModel*@
+﻿@model IEnumerable<BikeViewModel>
 @{
     ViewData["Title"] = "All available Custome bikes:";
 }
@@ -60,7 +60,7 @@
                             <td>@bike.Category</td>
                             <td>
                                 <div class="button-holder">
-                                    <a href="/Bikes/Details?bikeId=@bike.Id" class="btn btn-info text-uppercase">Info</a>
+                                    <a asp-controller="Bikes" asp-action="Details" asp-route-id="@bike.Id" class="btn btn-info text-uppercase">Info</a>
                                 </div>
                             </td>
                         </tr>

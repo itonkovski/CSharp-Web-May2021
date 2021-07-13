@@ -3,28 +3,28 @@
     <div class="container">
         <h1 style="margin: 2%; text-align: center;">Bike</h1>
         <div>
-            @*<div class="form-group text-center">
+            <div class="form-group text-center">
                 <img src="@Model.ImageUrl" class="img-fluid">
-            </div>*@
+            </div>
             <div class="form-group">
                 <label asp-for="Brand">Brand</label>
-                <input asp-for="Brand" type="text" readonly class="form-control" id="brand" name="Brand" value="@Model.Brand">
+                <input type="text" readonly class="form-control" id="brand" name="Brand" value="@Model.Brand">
             </div>
             <div class="form-group">
                 <label asp-for="Model">Model</label>
-                <input asp-for="Model" type="text" readonly class="form-control" id="model" name="Model" value="@Model.Model">
+                <input type="text" readonly class="form-control" id="model" name="Model" value="@Model.Model">
             </div>
             <div class="form-group">
                 <label asp-for="Year">Year</label>
-                <input asp-for="Year" type="text" readonly class="form-control" id="year" value="@Model.Year">
+                <input type="text" readonly class="form-control" id="year" value="@Model.Year">
             </div>
             <div class="form-group">
                 <label asp-for="Category">Category</label>
-                <input asp-for="Category" type="text" readonly class="form-control" id="category" name="Category" value="@Model.Category">
+                <input type="text" readonly class="form-control" id="category" name="Category" value="@Model.Category">
             </div>
             <div class="form-group">
                 <label asp-for="Description">Description</label>
-                <input asp-for="Description" type="text" readonly class="form-control" id="description" name="Description" rows="3" value="@Model.Description">
+                <input type="text" readonly class="form-control" id="description" name="Description" rows="3" value="@Model.Description">
             </div>
             <div class="form-group text-center">
                 <div class="button-holder">
