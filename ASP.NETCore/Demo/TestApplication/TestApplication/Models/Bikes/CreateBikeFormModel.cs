@@ -41,6 +41,8 @@ namespace TestApplication.Models.Bikes
         [Required]
         public string CategoryId { get; set; }
 
+        public bool Agreements { get; set; }
+
         public IEnumerable<BikeCategoryViewModel> Categories { get; set; }
     }
 }
