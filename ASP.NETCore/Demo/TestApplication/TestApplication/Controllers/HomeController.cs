@@ -1,22 +1,33 @@
 ﻿using System.Diagnostics;
+using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using TestApplication.Data;
 using TestApplication.Models;
+using TestApplication.Models.Home;
 
 namespace TestApplication.Controllers
 {
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly ApplicationDbContext data;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> logger, ApplicationDbContext data)
         {
             _logger = logger;
+            this.data = data;
         }
 
         public IActionResult Index()
         {
-            return View();
+            var totalBikes = this.data
+                .Bikes.Count();
+
+            return View(new BikeIndexViewModel
+            {
+                TotalBikes = totalBikes
+            });
         }
 
         public IActionResult Booking()

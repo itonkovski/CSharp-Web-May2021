@@ -18,24 +18,24 @@
             <span class="navbar-toggler-icon"></span>
         </button>*@
                 <nav class="navbar">
-                    <a class="navbar-brand" asp-area="" asp-controller="Home">
-                        <img src="https://previews.dropbox.com/p/orig/ABMzMbSUj8512tzUGwsYrYD0DzD9W_YrHYqgiCYv1NQJpO7plXfyeY9PEFZb3JZtS1TYhKRJ4ZNEVCIROlxMt6mfGM0ueNi4d7FaknlSdIFESs6Veb53P43s-yaRoJsz2pYGmsE20jCBzNmPIdA0-jFFOkjju90Nanidj7l0gHHTdGq9XJFl_PAB2PmelP03-hFIV4q1ZlkOKCSavBNKWBgXXurFUs9Bk34I25PE2jNuAfQYz658W11JKJ2lSEL0kSPZBF8ounGRNYzYH-JbflqTniEk3nXvy5FHw-Y9lyiQOrfg01fBFrMOINXENtyy_hsWHOGNULeNW1c5BSHM_nhu/p.svg?fv_content=true&size_mode=5" width="30" height="30" alt="">
+                    <a class="navbar-brand" asp-controller="Home" asp-action="Index">
+                        <img src="https://previews.dropbox.com/p/orig/ABMuIl76piu1f4JRxSVvuICAcGVIOO0raiGiZppxHboBXGHjW2z6oNeCpo9sq38Hb0c96lZLEmMGG74G35WWcZ9OWvL357x3EkA1TR2ZIb4jhy97htDSNZxDFmCrlv0kTe_Tni71tUiH1h2HYlyx36qWJR-YURcYthzLLmZ6VBcl7LtVvMf-07ztXdxNRJJbPabxO3zK1a6iBIsOt6COfJM6Y7ha9dgxi4EQvTIHETqY5JB_rroJ52iLHS9ESjNob_Dwma2iuT_uD0dRf6EmaMzkSvwL-Cejr46DaPh1lzn0nNz-iLZMWf0Ngw9EAW0eqjf-H4lQCwuZw5gkbs3jj8Gi/p.svg?fv_content=true&size_mode=5" width="30" height="30" alt="">
                     </a>
                 </nav>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <partial name="_LoginPartial" />
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Booking">Booking</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Booking">Booking</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Bikes" asp-action="Create">Create</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Bikes" asp-action="All">Bikes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Bikes" asp-action="Create">Customize</a>
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Bikes" asp-action="Review">Reviews</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About</a>

@@ -1,0 +1,28 @@
+﻿@model BikeSearchQueryModel
+@{
+    ViewData["Title"] = "Reviews";
+}
+<form method="get">
+    <div class="row">
+        <div class="form-group text-center col-md-4">
+            <label asp-for="SearchTerm"></label>
+            <input asp-for="SearchTerm" class="form-control mb-3" placeholder="Brand and Model">
+            <input type="submit" class="btn btn-primary" value="Select">
+        </div>
+    </div>
+</form>
+
+    <div class="row">
+        @foreach (var bike in Model.Bikes)
+        {
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <img class="card-img-top" src="@bike.ImageUrl" alt="@bike.Brand @bike.Model (@bike.Category)">
+                    <div class="card-body text-center">
+                        <h5 class="card-title text-center">@bike.Brand (@bike.Model - @bike.Year)</h5>
+                        <a asp-controller="Bikes" asp-action="Details" asp-route-id="@bike.Id" class="btn btn-primary">Select</a>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>

@@ -11,6 +11,7 @@
     <None Remove="Infrastructure\" />
     <None Remove="Models\Bikes\" />
     <None Remove="Services\" />
+    <None Remove="Models\Home\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -58,6 +59,9 @@
     <Content Update="Views\Bikes\Details.cshtml">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
+    <Content Update="Views\Bikes\Review.cshtml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Bikes\" />
@@ -65,5 +69,6 @@
     <Folder Include="Infrastructure\" />
     <Folder Include="Models\Bikes\" />
     <Folder Include="Services\" />
+    <Folder Include="Models\Home\" />
   </ItemGroup>
 </Project>

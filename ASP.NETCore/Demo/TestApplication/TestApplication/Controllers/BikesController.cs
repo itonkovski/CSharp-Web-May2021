@@ -32,6 +32,37 @@ namespace TestApplication.Controllers
             return View(bikes);
         }
 
+        public IActionResult Review(string searchTerm)
+        {
+            var bikesQuery = this.data.Bikes.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(searchTerm))
+            {
+                bikesQuery = bikesQuery.Where(x =>
+                    (x.Brand + " " + x.Model).ToLower().Contains(searchTerm.ToLower()) ||
+                    x.Description.ToLower().Contains(searchTerm.ToLower()));
+            }
+
+            var bikes = bikesQuery
+                .OrderByDescending(x => x.Id)
+                .Select(x => new BikeDetailsViewModel
+                {
+                    Id = x.Id,
+                    Brand = x.Brand,
+                    Model = x.Model,
+                    Year = x.Year,
+                    Category = x.Category.Name,
+                    Description = x.Description,
+                    ImageUrl = x.ImageUrl
+                })
+                .ToList();
+            return View(new BikeSearchQueryModel
+            {
+                Bikes = bikes,
+                SearchTerm = searchTerm
+            });
+        }
+
         public IActionResult Details(string id)
         {
             var bike = this.data.Bikes
@@ -83,7 +114,7 @@ namespace TestApplication.Controllers
             this.data.Bikes.Add(bikeData);
             this.data.SaveChanges();
 
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction(nameof(All));
         }
 
         public IEnumerable<BikeCategoryViewModel> GetBikeCategories()
