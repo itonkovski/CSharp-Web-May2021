@@ -6,9 +6,11 @@ namespace TestApplication.Models.Bikes
 {
     public class BikeSearchQueryModel
     {
+        public string Brand { get; set; }
+
         public IEnumerable<string> Brands { get; set; }
 
-        [Display(Name = "Search")]
+        [Display(Name = "Search by text")]
         public string SearchTerm { get; set; }
 
         public BikeSorting Sorting { get; set; }

@@ -32,9 +32,14 @@ namespace TestApplication.Controllers
             return View(bikes);
         }
 
-        public IActionResult Review(string searchTerm)
+        public IActionResult Review(string brand, string searchTerm)
         {
             var bikesQuery = this.data.Bikes.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(brand))
+            {
+                bikesQuery = bikesQuery.Where(x => x.Brand == brand);
+            }
 
             if (!string.IsNullOrWhiteSpace(searchTerm))
             {
@@ -56,8 +61,16 @@ namespace TestApplication.Controllers
                     ImageUrl = x.ImageUrl
                 })
                 .ToList();
+
+            var bikeBrands = this.data
+                .Bikes
+                .Select(x => x.Brand)
+                .Distinct()
+                .ToList();
+
             return View(new BikeSearchQueryModel
             {
+                Brands = bikeBrands,
                 Bikes = bikes,
                 SearchTerm = searchTerm
             });
