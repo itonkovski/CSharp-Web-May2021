@@ -57,7 +57,11 @@ namespace TestApplication.Controllers
                 _ => bikesQuery.OrderByDescending(x => x.Id)
             };
 
+            var totalBikes = bikesQuery.Count();
+
             var bikes = bikesQuery
+                .Skip((query.CurrentPage - 1) * BikeSearchQueryModel.BikesPerPage)
+                .Take(BikeSearchQueryModel.BikesPerPage)
                 .Select(x => new BikeDetailsViewModel
                 {
                     Id = x.Id,
@@ -81,6 +85,7 @@ namespace TestApplication.Controllers
 
             query.Brands = bikeBrands;
             query.Bikes = bikes;
+            query.TotalBikes = totalBikes;
 
             return View(query);
         }
