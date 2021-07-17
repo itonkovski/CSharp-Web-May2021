@@ -20,7 +20,16 @@
         <div class="form-group text-center col-md-4">
             <label asp-for="SearchTerm"></label>
             <input asp-for="SearchTerm" class="form-control mb-3" placeholder="Brand and Model">
-            <input type="submit" class="btn btn-primary" value="Select">
+            <input type="submit" class="btn btn-secondary" value="Select">
+        </div>
+        <div class="form-group text-center col-md-4">
+            <div class="form-group">
+                <label asp-for="Sorting"></label>
+                <select asp-for="Sorting" class="form-control">
+                    <option value="0" selected>Sort by year</option>
+                    <option value="1">Sort by brand and model</option>
+                </select>
+            </div>
         </div>
     </div>
 </form>

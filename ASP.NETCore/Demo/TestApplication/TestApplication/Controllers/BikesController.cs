@@ -28,11 +28,13 @@ namespace TestApplication.Controllers
                     Year = x.Year,
                     Category = x.Category.Name
                 })
+                .OrderBy(x => x.Brand)
+                .ThenBy(x => x.Model)
                 .ToList();
             return View(bikes);
         }
 
-        public IActionResult Review(string brand, string searchTerm)
+        public IActionResult Review(string brand, string searchTerm, BikeSorting sorting)
         {
             var bikesQuery = this.data.Bikes.AsQueryable();
 
@@ -48,8 +50,14 @@ namespace TestApplication.Controllers
                     x.Description.ToLower().Contains(searchTerm.ToLower()));
             }
 
+            bikesQuery = sorting switch
+            {
+                BikeSorting.Year => bikesQuery.OrderByDescending(x => x.Year),
+                BikeSorting.BrandAndModel => bikesQuery.OrderBy(x => x.Brand).ThenBy(x => x.Model),
+                _ => bikesQuery.OrderByDescending(x => x.Id)
+            };
+
             var bikes = bikesQuery
-                .OrderByDescending(x => x.Id)
                 .Select(x => new BikeDetailsViewModel
                 {
                     Id = x.Id,
@@ -60,19 +68,24 @@ namespace TestApplication.Controllers
                     Description = x.Description,
                     ImageUrl = x.ImageUrl
                 })
+                .OrderBy(x => x.Brand)
+                .ThenBy(x => x.Model)
                 .ToList();
 
             var bikeBrands = this.data
                 .Bikes
                 .Select(x => x.Brand)
                 .Distinct()
+                .OrderBy(x => x)
                 .ToList();
 
             return View(new BikeSearchQueryModel
             {
+                Brand = brand,
                 Brands = bikeBrands,
                 Bikes = bikes,
-                SearchTerm = searchTerm
+                SearchTerm = searchTerm,
+                Sorting = sorting
             });
         }
 
