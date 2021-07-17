@@ -34,23 +34,23 @@ namespace TestApplication.Controllers
             return View(bikes);
         }
 
-        public IActionResult Review(string brand, string searchTerm, BikeSorting sorting)
+        public IActionResult Review(BikeSearchQueryModel query)
         {
             var bikesQuery = this.data.Bikes.AsQueryable();
 
-            if (!string.IsNullOrWhiteSpace(brand))
+            if (!string.IsNullOrWhiteSpace(query.Brand))
             {
-                bikesQuery = bikesQuery.Where(x => x.Brand == brand);
+                bikesQuery = bikesQuery.Where(x => x.Brand == query.Brand);
             }
 
-            if (!string.IsNullOrWhiteSpace(searchTerm))
+            if (!string.IsNullOrWhiteSpace(query.SearchTerm))
             {
                 bikesQuery = bikesQuery.Where(x =>
-                    (x.Brand + " " + x.Model).ToLower().Contains(searchTerm.ToLower()) ||
-                    x.Description.ToLower().Contains(searchTerm.ToLower()));
+                    (x.Brand + " " + x.Model).ToLower().Contains(query.SearchTerm.ToLower()) ||
+                    x.Description.ToLower().Contains(query.SearchTerm.ToLower()));
             }
 
-            bikesQuery = sorting switch
+            bikesQuery = query.Sorting switch
             {
                 BikeSorting.Year => bikesQuery.OrderByDescending(x => x.Year),
                 BikeSorting.BrandAndModel => bikesQuery.OrderBy(x => x.Brand).ThenBy(x => x.Model),
@@ -79,14 +79,10 @@ namespace TestApplication.Controllers
                 .OrderBy(x => x)
                 .ToList();
 
-            return View(new BikeSearchQueryModel
-            {
-                Brand = brand,
-                Brands = bikeBrands,
-                Bikes = bikes,
-                SearchTerm = searchTerm,
-                Sorting = sorting
-            });
+            query.Brands = bikeBrands;
+            query.Bikes = bikes;
+
+            return View(query);
         }
 
         public IActionResult Details(string id)
