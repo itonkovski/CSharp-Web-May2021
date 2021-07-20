@@ -32,13 +32,17 @@ namespace TestApplication.Infrastructure
 
             data.Categories.AddRange(new[]
             {
-                new Category { Name = "Road Bikes" },
-                new Category { Name = "Offroad Bikes" },
+                new Category { Name = "Mountain Bikes" },
                 new Category { Name = "Hybrid Bikes" },
                 new Category { Name = "Folding Bikes" },
                 new Category { Name = "Electric Bikes" },
                 new Category { Name = "Touring Bikes" },
                 new Category { Name = "Womens Bikes" },
+                new Category { Name = "Kids Bikes" },
+                new Category { Name = "City Bikes" },
+                new Category { Name = "Gravel Bikes" },
+                new Category { Name = "Fixie Single Speed Bikes" },
+                new Category { Name = "BMX Bikes" }
             });
 
             data.SaveChanges();

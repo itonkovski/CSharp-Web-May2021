@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TestApplication.Data;
 using TestApplication.Data.Models;
+using TestApplication.Infrastructure;
 using TestApplication.Models.Bikes;
 
 namespace TestApplication.Controllers
@@ -108,14 +110,35 @@ namespace TestApplication.Controllers
             return View(bike);
         }
 
-        public IActionResult Create() => View(new CreateBikeFormModel
+        [Authorize]
+        public IActionResult Create()
         {
-            Categories = this.GetBikeCategories()
-        });
+            if (!this.UserIsDealer())
+            {
+                return RedirectToAction(nameof(DealersController.Become), "Dealers");
+            }
+
+            return View(new CreateBikeFormModel
+            {
+                Categories = this.GetBikeCategories()
+            });
+        }
 
         [HttpPost]
+        [Authorize]
         public IActionResult Create(CreateBikeFormModel bike)
         {
+            var dealerId = this.data
+                .Dealers
+                .Where(x => x.UserId == this.User.GetId())
+                .Select(x => x.Id)
+                .FirstOrDefault();
+
+            if (dealerId == 0)
+            {
+                return RedirectToAction(nameof(DealersController.Become), "Dealers");
+            }
+
             if (!this.data.Categories.Any(x => x.Id == bike.CategoryId))
             {
                 this.ModelState
@@ -135,7 +158,8 @@ namespace TestApplication.Controllers
                 Description = bike.Description,
                 ImageUrl = bike.ImageUrl,
                 Year = bike.Year,
-                CategoryId = bike.CategoryId
+                CategoryId = bike.CategoryId,
+                DealerId = dealerId
             };
 
             this.data.Bikes.Add(bikeData);
@@ -143,6 +167,11 @@ namespace TestApplication.Controllers
 
             return RedirectToAction(nameof(All));
         }
+
+        private bool UserIsDealer()
+            => !this.data
+                .Dealers
+                .Any(x => x.UserId == this.User.GetId());
 
         public IEnumerable<BikeCategoryViewModel> GetBikeCategories()
             => this.data
