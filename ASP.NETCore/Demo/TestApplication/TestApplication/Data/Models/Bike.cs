@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TestApplication.Data.Models
 {
-    using static DataConstants;
+    using static DataConstants.Bike;
 
     public class Bike
     {
@@ -15,11 +15,11 @@ namespace TestApplication.Data.Models
         public string Id { get; set; }
 
         [Required]
-        [MaxLength(BikeBrandMaxLength)]
+        [MaxLength(BrandMaxLength)]
         public string Brand { get; set; }
 
         [Required]
-        [MaxLength(BikeModelMaxLength)]
+        [MaxLength(ModelMaxLength)]
         public string Model { get; set; }
 
         [Required]
@@ -33,5 +33,9 @@ namespace TestApplication.Data.Models
         public string CategoryId { get; set; }
 
         public Category Category { get; set; }
+
+        public int DealerId { get; set; }
+
+        public Dealer Dealer { get; set; }
     }
 }

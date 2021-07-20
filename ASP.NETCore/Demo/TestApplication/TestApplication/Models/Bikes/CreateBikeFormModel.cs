@@ -5,28 +5,28 @@ using TestApplication.Data;
 
 namespace TestApplication.Models.Bikes
 {
-    using static DataConstants;
+    using static DataConstants.Bike;
 
     public class CreateBikeFormModel
     {
         [Required]
         [StringLength(
-            BikeBrandMaxLength,
-            MinimumLength = BikeBrandMinLength,
+            BrandMaxLength,
+            MinimumLength = BrandMinLength,
             ErrorMessage = "The field should contain from {2} to {1} symbols.")]
         public string Brand { get; set; }
 
         [Required]
         [StringLength(
-            BikeModelMaxLength,
-            MinimumLength = BikeModelMinLength,
+            ModelMaxLength,
+            MinimumLength = ModelMinLength,
             ErrorMessage = "The field should contain from {2} to {1} symbols.")]
         public string Model { get; set; }
 
         [Required]
         [StringLength(
             int.MaxValue,
-            MinimumLength = BikeDescriptionMinLength,
+            MinimumLength = DescriptionMinLength,
             ErrorMessage = "The field should contain at least {2} symbols.")]
         public string Description { get; set; }
 

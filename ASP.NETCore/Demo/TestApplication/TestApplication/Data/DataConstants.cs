@@ -3,12 +3,27 @@ namespace TestApplication.Data
 {
     public class DataConstants
     {
-        public const int BikeBrandMinLength = 3;
-        public const int BikeBrandMaxLength = 20;
+        public class Bike
+        {
+            public const int BrandMinLength = 3;
+            public const int BrandMaxLength = 20;
 
-        public const int BikeModelMinLength = 3;
-        public const int BikeModelMaxLength = 20;
+            public const int ModelMinLength = 3;
+            public const int ModelMaxLength = 20;
 
-        public const int BikeDescriptionMinLength = 10;
+            public const int DescriptionMinLength = 10;
+        }
+
+        public class Category
+        {
+            public const int NameMaxLength = 20;
+        }
+
+        public class Dealer
+        {
+            public const int NameMaxLength = 30;
+            public const int PhoneNumberMaxLength = 30;
+        }
+        
     }
 }
