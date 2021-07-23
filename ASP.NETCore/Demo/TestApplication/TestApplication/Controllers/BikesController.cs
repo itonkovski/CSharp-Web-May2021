@@ -169,7 +169,7 @@ namespace TestApplication.Controllers
         }
 
         private bool UserIsDealer()
-            => !this.data
+            => this.data
                 .Dealers
                 .Any(x => x.UserId == this.User.GetId());
 

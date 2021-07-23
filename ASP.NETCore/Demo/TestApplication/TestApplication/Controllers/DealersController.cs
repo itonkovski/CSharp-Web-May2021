@@ -30,11 +30,11 @@ namespace TestApplication.Controllers
         {
             var userId = this.User.GetId();
 
-            var userIdAlreadyDealer = this.data
+            var userIsAlreadyDealer = this.data
                 .Dealers
                 .Any(d => d.UserId == userId);
 
-            if (userIdAlreadyDealer)
+            if (userIsAlreadyDealer)
             {
                 return BadRequest();
             }
@@ -54,7 +54,7 @@ namespace TestApplication.Controllers
             this.data.Dealers.Add(dealerData);
             this.data.SaveChanges();
 
-            return RedirectToAction("All", "Cars");
+            return RedirectToAction("All", "Bikes");
         }
     }
 }

@@ -65,6 +65,11 @@
     </div>
 </div>
 
+@if (!Model.Bikes.Any())
+{
+    <h2 class="text-center">No bikes were found by the given criteria!</h2>
+}
+
 <div class="row">
     @foreach (var bike in Model.Bikes)
     {
