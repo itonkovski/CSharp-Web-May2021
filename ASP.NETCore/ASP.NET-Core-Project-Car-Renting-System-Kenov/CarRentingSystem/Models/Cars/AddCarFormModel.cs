@@ -3,31 +3,31 @@
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;
 
-    using static Data.DataConstants;
+    using static Data.DataConstants.Car;
 
     public class AddCarFormModel
     {
         [Required]
-        [StringLength(CarBrandMaxLength, MinimumLength = CarBrandMinLength)]
+        [StringLength(BrandMaxLength, MinimumLength = BrandMinLength)]
         public string Brand { get; init; }
 
         [Required]
-        [StringLength(CarModelMaxLength, MinimumLength = CarModelMinLength)]
+        [StringLength(ModelMaxLength, MinimumLength = ModelMinLength)]
         public string Model { get; init; }
 
         [Required]
         [StringLength(
             int.MaxValue, 
-            MinimumLength = CarDescriptionMinLength, 
+            MinimumLength = DescriptionMinLength, 
             ErrorMessage = "The field Description must be a string with a minimum length of {2}.")]
         public string Description { get; init; }
 
-        [Display(Name = "Image URL")]
         [Required]
         [Url]
+        [Display(Name = "Image URL")]
         public string ImageUrl { get; init; }
 
-        [Range(CarYearMinValue, CarYearMaxValue)]
+        [Range(YearMinValue, YearMaxValue)]
         public int Year { get; init; }
 
         [Display(Name = "Category")]
