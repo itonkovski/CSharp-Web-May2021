@@ -36,6 +36,8 @@ namespace TestApplication.Controllers
             return View(bikes);
         }
 
+        
+
         public IActionResult Review(BikeSearchQueryModel query)
         {
             var bikesQuery = this.data.Bikes.AsQueryable();
