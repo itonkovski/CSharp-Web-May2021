@@ -14,6 +14,7 @@
     <None Remove="Models\Home\" />
     <None Remove="Models\Dealers\" />
     <None Remove="Views\Dealers\" />
+    <None Remove="Services\Dealers\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -77,5 +78,6 @@
     <Folder Include="Models\Home\" />
     <Folder Include="Models\Dealers\" />
     <Folder Include="Views\Dealers\" />
+    <Folder Include="Services\Dealers\" />
   </ItemGroup>
 </Project>

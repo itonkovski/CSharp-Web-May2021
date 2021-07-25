@@ -8,6 +8,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TestApplication.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
+using TestApplication.Services.Dealers;
 
 namespace TestApplication
 {
@@ -35,6 +36,8 @@ namespace TestApplication
                 options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();
             });
             services.AddRazorPages();
+
+            services.AddTransient<IDealerService, DealerService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
