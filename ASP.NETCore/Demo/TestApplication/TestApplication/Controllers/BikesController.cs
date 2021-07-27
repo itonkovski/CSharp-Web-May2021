@@ -6,16 +6,19 @@ using TestApplication.Data;
 using TestApplication.Data.Models;
 using TestApplication.Infrastructure;
 using TestApplication.Models.Bikes;
+using TestApplication.Services.Dealers;
 
 namespace TestApplication.Controllers
 {
     public class BikesController : Controller
     {
         private readonly ApplicationDbContext data;
+        private readonly IDealerService dealerService;
 
-        public BikesController(ApplicationDbContext data)
+        public BikesController(ApplicationDbContext data, IDealerService dealerService)
         {
             this.data = data;
+            this.dealerService = dealerService;
         }
 
         public IActionResult All()
@@ -36,7 +39,24 @@ namespace TestApplication.Controllers
             return View(bikes);
         }
 
-        
+        [Authorize]
+        public IActionResult Mine()
+        {
+            var bikes = this.data
+                .Bikes
+                .Select(x => new BikeViewModel
+                {
+                    Id = x.Id,
+                    Brand = x.Brand,
+                    Model = x.Model,
+                    Year = x.Year,
+                    Category = x.Category.Name
+                })
+                .OrderBy(x => x.Brand)
+                .ThenBy(x => x.Model)
+                .ToList();
+            return View(bikes);
+        }
 
         public IActionResult Review(BikeSearchQueryModel query)
         {

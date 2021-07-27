@@ -21,5 +21,16 @@ namespace TestApplication.Services.Dealers
 
             return dealer;
         }
+
+        public int GetIdByUser(string userId)
+        {
+            var id = this.data
+                .Dealers
+                .Where(x => x.UserId == userId)
+                .Select(x => x.Id)
+                .FirstOrDefault();
+
+            return id;
+        }
     }
 }
