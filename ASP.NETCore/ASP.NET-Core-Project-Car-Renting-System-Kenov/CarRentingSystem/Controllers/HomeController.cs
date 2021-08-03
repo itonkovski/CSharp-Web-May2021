@@ -1,46 +1,45 @@
 ﻿namespace CarRentingSystem.Controllers
 {
+    using System;
+    using System.Collections.Generic;
     using System.Linq;
-    using AutoMapper;
-    using AutoMapper.QueryableExtensions;
-    using CarRentingSystem.Data;
-    using CarRentingSystem.Models.Home;
-    using CarRentingSystem.Services.Statistics;
+    using CarRentingSystem.Services.Cars;
+    using CarRentingSystem.Services.Cars.Models;
     using Microsoft.AspNetCore.Mvc;
+    using Microsoft.Extensions.Caching.Memory;
 
     public class HomeController : Controller
     {
-        private readonly IStatisticsService statistics;
-        private readonly IConfigurationProvider mapper;
-        private readonly CarRentingDbContext data;
+        private readonly ICarService cars;
+        private readonly IMemoryCache cache;
 
         public HomeController(
-            IStatisticsService statistics,
-            IMapper mapper,
-            CarRentingDbContext data)
+            ICarService cars,
+            IMemoryCache cache)
         {
-            this.statistics = statistics;
-            this.mapper = mapper.ConfigurationProvider;
-            this.data = data;
+            this.cars = cars;
+            this.cache = cache;
         }
 
         public IActionResult Index()
         {
-            var cars = this.data
-                .Cars
-                .OrderByDescending(c => c.Id)
-                .ProjectTo<CarIndexViewModel>(this.mapper)
-                .Take(3)
-                .ToList();
+            const string latestCarsCacheKey = "LatestCarsCacheKey";
 
-            var totalStatistics = this.statistics.Total();
+            var latestCars = this.cache.Get<List<LatestCarServiceModel>>(latestCarsCacheKey);
 
-            return View(new IndexViewModel
+            if (latestCars == null)
             {
-                TotalCars = totalStatistics.TotalCars,
-                TotalUsers = totalStatistics.TotalUsers,
-                Cars = cars
-            });
+                latestCars = this.cars
+                   .Latest()
+                   .ToList();
+
+                var cacheOptions = new MemoryCacheEntryOptions()
+                    .SetAbsoluteExpiration(TimeSpan.FromMinutes(15));
+
+                this.cache.Set(latestCarsCacheKey, latestCars, cacheOptions);
+            }
+
+            return View(latestCars);
         }
 
         public IActionResult Error() => View();

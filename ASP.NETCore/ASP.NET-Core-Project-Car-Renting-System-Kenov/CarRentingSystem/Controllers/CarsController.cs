@@ -7,7 +7,7 @@
     using CarRentingSystem.Services.Dealers;
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
-    
+
     public class CarsController : Controller
     {
         private readonly ICarService cars;
@@ -41,7 +41,7 @@
 
             return View(query);
         }
-
+        
         [Authorize]
         public IActionResult Mine()
         {
