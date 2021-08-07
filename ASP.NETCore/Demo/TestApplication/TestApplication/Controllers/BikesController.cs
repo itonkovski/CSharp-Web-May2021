@@ -6,19 +6,19 @@ using TestApplication.Data;
 using TestApplication.Data.Models;
 using TestApplication.Infrastructure;
 using TestApplication.Models.Bikes;
-using TestApplication.Services.Dealers;
+using TestApplication.Services.Bikes;
 
 namespace TestApplication.Controllers
 {
     public class BikesController : Controller
     {
         private readonly ApplicationDbContext data;
-        private readonly IDealerService dealerService;
+        private readonly IBikeService bikeService;
 
-        public BikesController(ApplicationDbContext data, IDealerService dealerService)
+        public BikesController(ApplicationDbContext data, IBikeService bikeService)
         {
             this.data = data;
-            this.dealerService = dealerService;
+            this.bikeService = bikeService;
         }
 
         public IActionResult All()
