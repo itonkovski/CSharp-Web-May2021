@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using TestApplication.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using TestApplication.Services.Dealers;
+using TestApplication.Services.Bikes;
 
 namespace TestApplication
 {
@@ -38,6 +39,7 @@ namespace TestApplication
             services.AddRazorPages();
 
             services.AddTransient<IDealerService, DealerService>();
+            services.AddTransient<IBikeService, BikeService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

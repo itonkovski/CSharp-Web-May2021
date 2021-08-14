@@ -16,68 +16,53 @@ namespace TestApplication.Services.Bikes
             this.data = data;
         }
 
-        public BikeQueryServiceModel All(
-            string brand,
-            string searchTerm,
-            BikeSorting sorting,
-            int currentPage,
-            int bikesPerPage)
+        public void All(AllBikesQueryModel queryModel)
         {
-            var bikesQuery = this.data.Bikes.AsQueryable();
+            var bikesQuery = this.data
+                .Bikes
+                .AsQueryable();
 
-            if (!string.IsNullOrWhiteSpace(brand))
+            if (!string.IsNullOrWhiteSpace(queryModel.Brand))
             {
-                bikesQuery = bikesQuery.Where(c => c.Brand == brand);
+                bikesQuery = bikesQuery.Where(x => x.Brand == queryModel.Brand);
             }
 
-            if (!string.IsNullOrWhiteSpace(searchTerm))
+            if (!string.IsNullOrWhiteSpace(queryModel.SearchTerm))
             {
-                bikesQuery = bikesQuery.Where(c =>
-                    (c.Brand + " " + c.Model).ToLower().Contains(searchTerm.ToLower()) ||
-                    c.Description.ToLower().Contains(searchTerm.ToLower()));
+                bikesQuery = bikesQuery.Where(x =>
+                    (x.Brand + " " + x.Model).ToLower().Contains(queryModel.SearchTerm.ToLower()) ||
+                    x.Description.ToLower().Contains(queryModel.SearchTerm.ToLower()));
             }
 
-            bikesQuery = sorting switch
+            bikesQuery = queryModel.Sorting switch
             {
                 BikeSorting.Year => bikesQuery.OrderByDescending(x => x.Year),
                 BikeSorting.BrandAndModel => bikesQuery.OrderBy(x => x.Brand).ThenBy(x => x.Model),
                 _ => bikesQuery.OrderByDescending(x => x.Id)
             };
 
-            var totalBikes = bikesQuery.Count();
-
             var bikes = bikesQuery
-                .Skip((currentPage - 1) * bikesPerPage)
-                .Take(bikesPerPage)
-                .Select(x => new BikeServiceModel
+                .OrderByDescending(c => c.Id)
+                .Select(x => new BikeListingViewModel
                 {
                     Id = x.Id,
                     Brand = x.Brand,
                     Model = x.Model,
-                    Description = x.Description,
                     Year = x.Year,
-                    Category = x.Category.Name,
-                    ImageUrl = x.ImageUrl
+                    ImageUrl = x.ImageUrl,
+                    Category = x.Category.Name
                 })
-                .OrderBy(x => x.Brand)
-                .ThenBy(x => x.Model)
                 .ToList();
 
-            return new BikeQueryServiceModel
-            {
-                TotalBikes = totalBikes,
-                CurrentPage = currentPage,
-                BikesPerPage = bikesPerPage,
-                Bikes = bikes
-            };
-        }
-
-        public IEnumerable<string> AllBikeBrands()
-            => this.data
+            var bikeBrands = this.data
                 .Bikes
-                .Select(c => c.Brand)
+                .Select(x => x.Brand)
                 .Distinct()
-                .OrderBy(br => br)
+                .OrderBy(x => x)
                 .ToList();
+
+            queryModel.Brands = bikeBrands;
+            queryModel.Bikes = bikes;
+        }
     }
 }

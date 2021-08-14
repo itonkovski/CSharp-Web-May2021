@@ -21,6 +21,57 @@ namespace TestApplication.Controllers
             this.bikeService = bikeService;
         }
 
+        public IActionResult Ivars(AllBikesQueryModel queryModel)
+        {
+            //var bikesQuery = this.data
+            //    .Bikes
+            //    .AsQueryable();
+
+            //if (!string.IsNullOrWhiteSpace(queryModel.Brand))
+            //{
+            //    bikesQuery = bikesQuery.Where(x => x.Brand == queryModel.Brand);
+            //}
+
+            //if (!string.IsNullOrWhiteSpace(queryModel.SearchTerm))
+            //{
+            //    bikesQuery = bikesQuery.Where(x =>
+            //        (x.Brand + " " + x.Model).ToLower().Contains(queryModel.SearchTerm.ToLower()) ||
+            //        x.Description.ToLower().Contains(queryModel.SearchTerm.ToLower()));
+            //}
+
+            //bikesQuery = queryModel.Sorting switch
+            //{
+            //    BikeSorting.Year => bikesQuery.OrderByDescending(x => x.Year),
+            //    BikeSorting.BrandAndModel => bikesQuery.OrderBy(x => x.Brand).ThenBy(x => x.Model),
+            //    _ => bikesQuery.OrderByDescending(x => x.Id)
+            //};
+
+            //var bikes = bikesQuery
+            //    .OrderByDescending(c => c.Id)
+            //    .Select(x => new BikeListingViewModel
+            //    {
+            //        Id = x.Id,
+            //        Brand = x.Brand,
+            //        Model = x.Model,
+            //        Year = x.Year,
+            //        ImageUrl = x.ImageUrl,
+            //        Category = x.Category.Name
+            //    })
+            //    .ToList();
+
+            //var bikeBrands = this.data
+            //    .Bikes
+            //    .Select(x => x.Brand)
+            //    .Distinct()
+            //    .OrderBy(x => x)
+            //    .ToList();
+
+            //queryModel.Brands = bikeBrands;
+            //queryModel.Bikes = bikes;
+            this.bikeService.All(queryModel);
+            return View(queryModel);
+        }
+
         public IActionResult All()
         {
             var bikes = this.data
