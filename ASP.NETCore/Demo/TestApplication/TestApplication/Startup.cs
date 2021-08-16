@@ -10,6 +10,7 @@ using TestApplication.Infrastructure;
 using Microsoft.AspNetCore.Mvc;
 using TestApplication.Services.Dealers;
 using TestApplication.Services.Bikes;
+using TestApplication.Data.Models;
 
 namespace TestApplication
 {
@@ -28,10 +29,15 @@ namespace TestApplication
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
                     Configuration.GetConnectionString("DefaultConnection")));
+
             services
                 .AddDefaultIdentity<IdentityUser>(options =>
-                    options.SignIn.RequireConfirmedAccount = false)
+                {
+                    options.SignIn.RequireConfirmedAccount = false;
+                })
+                .AddRoles<IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>();
+
             services.AddControllersWithViews(options =>
             {
                 options.Filters.Add<AutoValidateAntiforgeryTokenAttribute>();

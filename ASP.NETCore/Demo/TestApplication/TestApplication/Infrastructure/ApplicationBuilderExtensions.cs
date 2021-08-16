@@ -41,7 +41,6 @@ namespace TestApplication.Infrastructure
                 new Category { Name = "Kids Bikes" },
                 new Category { Name = "City Bikes" },
                 new Category { Name = "Gravel Bikes" },
-                new Category { Name = "Fixie Single Speed Bikes" },
                 new Category { Name = "BMX Bikes" }
             });
 

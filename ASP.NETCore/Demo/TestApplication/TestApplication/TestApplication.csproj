@@ -17,6 +17,9 @@
     <None Remove="Services\Dealers\" />
     <None Remove="Services\Bikes\" />
     <None Remove="Services\Home\" />
+    <None Remove="Controllers\Api\" />
+    <None Remove="Models\Api\" />
+    <None Remove="Models\Api\Statistics\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -86,5 +89,8 @@
     <Folder Include="Services\Dealers\" />
     <Folder Include="Services\Bikes\" />
     <Folder Include="Services\Home\" />
+    <Folder Include="Controllers\Api\" />
+    <Folder Include="Models\Api\" />
+    <Folder Include="Models\Api\Statistics\" />
   </ItemGroup>
 </Project>

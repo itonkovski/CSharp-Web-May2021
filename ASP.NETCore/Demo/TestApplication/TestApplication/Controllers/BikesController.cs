@@ -21,6 +21,7 @@ namespace TestApplication.Controllers
             this.bikeService = bikeService;
         }
 
+        [Authorize(Roles = "Admin")]
         public IActionResult Ivars(AllBikesQueryModel queryModel)
         {
             //var bikesQuery = this.data
@@ -72,6 +73,7 @@ namespace TestApplication.Controllers
             return View(queryModel);
         }
 
+        [Authorize(Roles = "Admin, Mechanic")]
         public IActionResult All()
         {
             var bikes = this.data

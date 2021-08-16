@@ -5,7 +5,7 @@ using TestApplication.Data.Models;
 
 namespace TestApplication.Data
 {
-    public class ApplicationDbContext : IdentityDbContext
+    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -18,6 +18,8 @@ namespace TestApplication.Data
         public DbSet<Category> Categories { get; set; }
 
         public DbSet<Dealer> Dealers { get; set; }
+
+        public DbSet<Admin> Admins { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -40,6 +42,13 @@ namespace TestApplication.Data
                 .HasOne<IdentityUser>()
                 .WithOne()
                 .HasForeignKey<Dealer>(d => d.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            builder
+                .Entity<Admin>()
+                .HasOne<IdentityUser>()
+                .WithOne()
+                .HasForeignKey<Admin>(d => d.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             base.OnModelCreating(builder);
