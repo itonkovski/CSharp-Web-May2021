@@ -64,7 +64,7 @@ namespace TestApplication.Infrastructure
                         return;
                     }
 
-                    var role = new IdentityRole { Name = "Admin" };
+                    var role = new IdentityRole { Name = WebConstants.AdministratorRoleName };
 
                     await roleManager.CreateAsync(role);
 

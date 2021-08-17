@@ -47,3 +47,8 @@
         </div>
     }
 </div>
+
+@if (!Model.Bikes.Any())
+{
+    <h2 class="text-center">No bikes found by the given criteria!</h2>
+}

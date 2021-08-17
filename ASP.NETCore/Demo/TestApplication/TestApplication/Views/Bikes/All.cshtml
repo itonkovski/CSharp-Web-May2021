@@ -48,6 +48,8 @@
                         <th scope="col">Year</th>
                         <th scope="col">Category</th>
                         <th scope="col">Details</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -61,6 +63,16 @@
                             <td>
                                 <div class="button-holder">
                                     <a asp-controller="Bikes" asp-action="Details" asp-route-id="@bike.Id" class="btn btn-info text-uppercase">Info</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="button-holder">
+                                    <a asp-controller="Bikes" asp-action="Edit" asp-route-id="@bike.Id" class="btn btn-warning text-uppercase">Edit</a>
+                                </div>
+                            </td>
+                            <td>
+                                <div class="button-holder">
+                                    <a asp-controller="Bikes" asp-action="Delete" asp-route-id="@bike.Id" class="btn btn-danger text-uppercase">Delete</a>
                                 </div>
                             </td>
                         </tr>

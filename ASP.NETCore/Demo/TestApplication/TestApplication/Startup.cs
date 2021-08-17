@@ -44,6 +44,8 @@ namespace TestApplication
             });
             services.AddRazorPages();
 
+            
+
             services.AddTransient<IDealerService, DealerService>();
             services.AddTransient<IBikeService, BikeService>();
         }

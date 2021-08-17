@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using System.Linq;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using TestApplication.Data;
@@ -30,6 +31,7 @@ namespace TestApplication.Controllers
             });
         }
 
+        [Authorize]
         public IActionResult Booking()
         {
             return View();
