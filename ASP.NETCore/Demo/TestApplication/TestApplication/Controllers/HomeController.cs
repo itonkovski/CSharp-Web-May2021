@@ -25,9 +25,13 @@ namespace TestApplication.Controllers
             var totalBikes = this.data
                 .Bikes.Count();
 
+            var totalUsers = this.data
+                .Users.Count();
+
             return View(new BikeIndexViewModel
             {
-                TotalBikes = totalBikes
+                TotalBikes = totalBikes,
+                TotalUsers = totalUsers
             });
         }
 

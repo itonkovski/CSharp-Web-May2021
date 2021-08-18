@@ -17,7 +17,7 @@ namespace TestApplication.Controllers.Api
         }
 
         [HttpGet]
-        public IEnumerable GetCar()
+        public IEnumerable GetBike()
         {
             return this.dbContext.Bikes.ToList();
         }

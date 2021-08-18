@@ -7,6 +7,6 @@ namespace TestApplication.Models.Api.Statistics
 
         public int TotalUsers { get; set; }
 
-        public int Total { get; set; }
+        public int TotalRents { get; set; }
     }
 }
