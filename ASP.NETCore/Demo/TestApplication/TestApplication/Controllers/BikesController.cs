@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using TestApplication.Data;
@@ -14,11 +15,13 @@ namespace TestApplication.Controllers
     {
         private readonly ApplicationDbContext data;
         private readonly IBikeService bikeService;
+        private readonly IMapper mapper;
 
-        public BikesController(ApplicationDbContext data, IBikeService bikeService)
+        public BikesController(ApplicationDbContext data, IBikeService bikeService, IMapper mapper)
         {
             this.data = data;
             this.bikeService = bikeService;
+            this.mapper = mapper;
         }
 
         [Authorize(Roles = "Admin")]
