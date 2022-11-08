@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <UserSecretsId>aspnet-TestApplication-EA92229F-27C8-47E7-978C-D1E92255BC12</UserSecretsId>
+    <DockerComposeProjectPath>../docker-compose.dcproj</DockerComposeProjectPath>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,6 +29,7 @@
     <None Remove="TestApplication.Services\" />
     <None Remove="TestApplication.Web\" />
     <None Remove="AutoMapper.Extensions.Microsoft.DependencyInjection" />
+    <None Remove="Services\Votes\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="app.db" CopyToOutputDirectory="PreserveNewest" ExcludeFromSingleFile="true" />
@@ -120,5 +122,6 @@
     <Folder Include="Areas\Admin\Views\Bikes\" />
     <Folder Include="TestApplication.Services\" />
     <Folder Include="TestApplication.Web\" />
+    <Folder Include="Services\Votes\" />
   </ItemGroup>
 </Project>

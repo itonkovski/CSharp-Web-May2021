@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -14,6 +15,9 @@ using Microsoft.Extensions.Logging;
 using Microsoft.OpenApi.Models;
 using TestWebApi.Models;
 using TestWebApi.Repositories;
+using TwelveDataSharp;
+using TwelveDataSharp.Interfaces;
+using TwelveDataSharp.Library.ResponseModels;
 
 namespace TestWebApi
 {
@@ -30,12 +34,15 @@ namespace TestWebApi
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddScoped<IBookRepository, BookRepository>();
+            services.AddScoped<ICurrencyRepository, CurrencyRepository>();
             services.AddDbContext<BookContext>(x => x.UseSqlite("Data source=books.db"));
+            services.AddDbContext<CurrencyContext>(x => x.UseSqlite("Data source=currency.db"));
             services.AddControllers();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "BookApi", Version = "v1" });
             });
+            services.AddSingleton(new TwelveDataClient("80576d2956804a20b19f71a0a9f15469", new HttpClient()));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

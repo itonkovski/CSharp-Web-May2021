@@ -23,7 +23,7 @@ namespace TestApplication.Data.Models
         [Required]
         public string UserId { get; set; }
 
-        public IdentityUser User { get; set; }
+        public ApplicationUser User { get; set; }
 
         public IEnumerable<Bike> Bikes { get; set; }
     }

@@ -5,7 +5,7 @@ using TestApplication.Data.Models;
 
 namespace TestApplication.Data
 {
-    public class ApplicationDbContext : IdentityDbContext<IdentityUser>
+    public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
@@ -14,6 +14,8 @@ namespace TestApplication.Data
         }
 
         public DbSet<Bike> Bikes { get; set; }
+
+        public DbSet<Vote> Votes { get; set; }
 
         public DbSet<Category> Categories { get; set; }
 
@@ -39,14 +41,14 @@ namespace TestApplication.Data
 
             builder
                 .Entity<Dealer>()
-                .HasOne<IdentityUser>()
+                .HasOne<ApplicationUser>()
                 .WithOne()
                 .HasForeignKey<Dealer>(d => d.UserId)
                 .OnDelete(DeleteBehavior.Restrict);
 
             builder
                 .Entity<Admin>()
-                .HasOne<IdentityUser>()
+                .HasOne<ApplicationUser>()
                 .WithOne()
                 .HasForeignKey<Admin>(d => d.UserId)
                 .OnDelete(DeleteBehavior.Restrict);

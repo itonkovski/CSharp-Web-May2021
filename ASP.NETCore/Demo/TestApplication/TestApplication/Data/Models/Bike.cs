@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace TestApplication.Data.Models
@@ -37,5 +38,7 @@ namespace TestApplication.Data.Models
         public int DealerId { get; set; }
 
         public Dealer Dealer { get; set; }
+
+        public virtual ICollection<Vote> Votes { get; set; }
     }
 }

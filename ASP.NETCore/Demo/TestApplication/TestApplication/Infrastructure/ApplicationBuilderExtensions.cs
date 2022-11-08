@@ -53,7 +53,7 @@ namespace TestApplication.Infrastructure
 
         private static void SeedAdministrator(IServiceProvider services, ApplicationDbContext data)
         {
-            var userManager = services.GetRequiredService<UserManager<IdentityUser>>();
+            var userManager = services.GetRequiredService<UserManager<ApplicationUser>>();
             var roleManager = services.GetRequiredService<RoleManager<IdentityRole>>();
 
             Task
@@ -71,7 +71,7 @@ namespace TestApplication.Infrastructure
                     const string adminEmail = "itonkovski3@gmail.com";
                     const string adminPassword = "itonkovski2N.";
 
-                    var user = new IdentityUser
+                    var user = new ApplicationUser
                     {
                         Email = adminEmail,
                         UserName = adminEmail

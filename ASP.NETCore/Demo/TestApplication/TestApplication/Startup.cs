@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Mvc;
 using TestApplication.Services.Dealers;
 using TestApplication.Services.Bikes;
 using TestApplication.Data.Models;
+using TestApplication.Services.Votes;
 
 namespace TestApplication
 {
@@ -31,7 +32,7 @@ namespace TestApplication
                     Configuration.GetConnectionString("DefaultConnection")));
 
             services
-                .AddDefaultIdentity<IdentityUser>(options =>
+                .AddDefaultIdentity<ApplicationUser>(options =>
                 {
                     options.SignIn.RequireConfirmedAccount = false;
                 })
@@ -51,6 +52,7 @@ namespace TestApplication
 
             services.AddTransient<IDealerService, DealerService>();
             services.AddTransient<IBikeService, BikeService>();
+            services.AddTransient<IVotesService, VotesService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

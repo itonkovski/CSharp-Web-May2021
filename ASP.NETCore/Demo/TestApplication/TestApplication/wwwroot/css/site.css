@@ -97,3 +97,13 @@ body {
     left: 0;
     min-height: 500px;
 }
+
+.heart {
+    border: 1px soild green !important;
+    border-color: green !important;
+    border-radius: 22px
+}
+
+.heart-icon {
+    color: green
+}

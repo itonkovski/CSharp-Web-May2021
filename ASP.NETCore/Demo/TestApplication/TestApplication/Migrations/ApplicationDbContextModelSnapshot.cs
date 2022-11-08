@@ -82,6 +82,10 @@ namespace TestApplication.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Email")
                         .HasColumnType("nvarchar(256)")
                         .HasMaxLength(256);
@@ -133,6 +137,8 @@ namespace TestApplication.Migrations
                         .HasFilter("[NormalizedUserName] IS NOT NULL");
 
                     b.ToTable("AspNetUsers");
+
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityUser");
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityUserClaim<string>", b =>
@@ -341,6 +347,39 @@ namespace TestApplication.Migrations
                     b.ToTable("Dealers");
                 });
 
+            modelBuilder.Entity("TestApplication.Data.Models.Vote", b =>
+                {
+                    b.Property<string>("Id")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<int>("BikeId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("BikeId1")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("UserId")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<byte>("Value")
+                        .HasColumnType("tinyint");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BikeId1");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Votes");
+                });
+
+            modelBuilder.Entity("TestApplication.Data.Models.ApplicationUser", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityUser");
+
+                    b.HasDiscriminator().HasValue("ApplicationUser");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -430,6 +469,17 @@ namespace TestApplication.Migrations
                         .HasForeignKey("TestApplication.Data.Models.Dealer", "UserId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("TestApplication.Data.Models.Vote", b =>
+                {
+                    b.HasOne("TestApplication.Data.Models.Bike", "Bike")
+                        .WithMany("Votes")
+                        .HasForeignKey("BikeId1");
+
+                    b.HasOne("TestApplication.Data.Models.ApplicationUser", "User")
+                        .WithMany("Votes")
+                        .HasForeignKey("UserId");
                 });
 #pragma warning restore 612, 618
         }
