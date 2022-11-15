@@ -1,4 +1,4 @@
-﻿@model IEnumerable<ConsumeSpotifyWebAPI.Models.Musician>
+﻿@model IEnumerable<ConsumeSpotifyWebAPI.Models.Release>
 
 @{
     ViewData["Title"] = "Home Page";
@@ -11,10 +11,10 @@
         {
             <div class="card m-1" style="width:350px;">
                 <div class="card-body">
-                    @*<h5 class="card-title">@Html.DisplayFor(modelItem => item.Artists)</h5>*@
+                    <h5 class="card-title">@Html.DisplayFor(modelItem => item.Artists)</h5>
                     <h6 class="card-subtitle mb-2 text-muted">@Html.DisplayFor(modelItem => item.Name)</h6>
-                    @*<p class="card-text">@Html.DisplayFor(modelItem => item.Date)</p>
-                    <img src="@Html.DisplayFor(modelItem => item.ImageUrl)" width="300" height="300" alt="Release picture" />*@
+                    <p class="card-text">@Html.DisplayFor(modelItem => item.Date)</p>
+                    <img src="@Html.DisplayFor(modelItem => item.ImageUrl)" width="300" height="300" alt="Release picture" />
                     <a href="@Html.DisplayFor(modelItem => item.Link)" target="_blank">Listen</a>
                 </div>
             </div>

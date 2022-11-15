@@ -32,14 +32,14 @@ namespace ConsumeSpotifyWebAPI.Controllers
 
         public async Task<IActionResult> Index()
         {
-            //var newReleases = await GetReleases();
-            //return View(newReleases);
+            var newReleases = await GetReleases();
+            return View(newReleases);
 
             //var newArtists = await GetTracks();
             //return View(newArtists);
 
-            var newMusician = await GetMusician();
-            return View(newMusician);
+            //var newMusician = await GetMusician();
+            //return View(newMusician);
 
             //var newTest = await GetSpotifyTest();
             //return View(newTest);
@@ -58,25 +58,25 @@ namespace ConsumeSpotifyWebAPI.Controllers
         //    return artist;
         //}
 
-        //private async Task<IEnumerable<Release>> GetReleases()
-        //{
-        //    try
-        //    {
-        //        var token = await _spotifyAccountService.GetToken(
-        //            _configuration["Spotify:ClientId"],
-        //            _configuration["Spotify:ClientSecret"]);
+        private async Task<IEnumerable<Release>> GetReleases()
+        {
+            try
+            {
+                var token = await _spotifyAccountService.GetToken(
+                    _configuration["Spotify:ClientId"],
+                    _configuration["Spotify:ClientSecret"]);
 
-        //        var newReleases = await _spotifyService.GetNewReleases("NO", 20, token);
+                var newReleases = await _spotifyService.GetNewReleases("NO", 20, token);
 
-        //        return newReleases;
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        Debug.Write(ex);
+                return newReleases;
+            }
+            catch (Exception ex)
+            {
+                Debug.Write(ex);
 
-        //        return Enumerable.Empty<Release>();
-        //    }
-        //}
+                return Enumerable.Empty<Release>();
+            }
+        }
 
         //private async Task<IEnumerable<Artists>> GetTracks()
         //{
@@ -98,34 +98,34 @@ namespace ConsumeSpotifyWebAPI.Controllers
         //    }
         //}
 
-        private async Task<IEnumerable<Musician>> GetMusician()
-        {
-            //var token = await _spotifyAccountService.GetToken(
-            //        _configuration["Spotify:ClientId"],
-            //        _configuration["Spotify:ClientSecret"]);
+        //private async Task<IEnumerable<Musician>> GetMusician()
+        //{
+        //    //var token = await _spotifyAccountService.GetToken(
+        //    //        _configuration["Spotify:ClientId"],
+        //    //        _configuration["Spotify:ClientSecret"]);
 
-            //var musician = await _spotifyService.GetMusician("3EoonCWqWAoq6tfHvlSK4G", token);
+        //    //var musician = await _spotifyService.GetMusician("3EoonCWqWAoq6tfHvlSK4G", token);
 
-            //return musician;
+        //    //return musician;
 
-            //Original working version
-            try
-            {
-                var token = await _spotifyAccountService.GetToken(
-                    _configuration["Spotify:ClientId"],
-                    _configuration["Spotify:ClientSecret"]);
+        //    //Original working version
+        //    try
+        //    {
+        //        var token = await _spotifyAccountService.GetToken(
+        //            _configuration["Spotify:ClientId"],
+        //            _configuration["Spotify:ClientSecret"]);
 
-                var musicians = await _spotifyService.GetMusician("3EoonCWqWAoq6tfHvlSK4G,2CIMQHirSU0MQqyYHq0eOx", token);
+        //        var musicians = await _spotifyService.GetMusician("3EoonCWqWAoq6tfHvlSK4G,2CIMQHirSU0MQqyYHq0eOx", token);
 
-                return musicians;
-            }
-            catch (Exception ex)
-            {
-                Debug.Write(ex);
+        //        return musicians;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        Debug.Write(ex);
 
-                return Enumerable.Empty<Musician>();
-            }
-        }
+        //        return Enumerable.Empty<Musician>();
+        //    }
+        //}
 
         public IActionResult Privacy()
         {
