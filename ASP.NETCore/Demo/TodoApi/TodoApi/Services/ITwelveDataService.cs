@@ -1,11 +1,11 @@
-﻿using System;
-using System.Threading.Tasks;
-using TodoApi.Data.Models;
+﻿//using System;
+//using System.Threading.Tasks;
+//using TodoApi.Data.Models;
 
-namespace TodoApi.Services
-{
-    public interface ITwelveDataService
-    {
-        Task<TwelveDataPrice> GetRealTimePriceAsync(string symbol);
-    }
-}
+//namespace TodoApi.Services
+//{
+//    public interface ITwelveDataService
+//    {
+//        Task<TwelveDataResult> GetRealTimePriceAsync(string symbol);
+//    }
+//}

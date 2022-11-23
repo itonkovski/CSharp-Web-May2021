@@ -16,7 +16,6 @@ using TodoApi.Data.Models;
 using System.Net.Http;
 using TwelveDataSharp;
 using TodoApi.Data;
-using TodoApi.Services;
 
 namespace TodoApi
 {
@@ -39,12 +38,12 @@ namespace TodoApi
             //services.AddSingleton(new TwelveDataClient("80576d2956804a20b19f71a0a9f15469", new HttpClient()));
             services.AddControllers()
                 .AddJsonOptions(options =>
-                    options.JsonSerializerOptions.PropertyNamingPolicy = null); ;
+                    options.JsonSerializerOptions.PropertyNamingPolicy = null);
             services.AddDbContext<TodoContext>(opt => opt
                 .UseInMemoryDatabase("TodoList"));
             services.AddDbContext<TwelveDataContext>(opt => opt
                 .UseInMemoryDatabase("TwelveDataList"));
-            //services.AddTransient<ITwelveDataService, TwelveDataService>();
+            //services.AddScoped<ITwelveDataService, TwelveDataService>();
 
             ////Swagger configuration
             //services.AddSwaggerGen(c =>
@@ -72,7 +71,7 @@ namespace TodoApi
 
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

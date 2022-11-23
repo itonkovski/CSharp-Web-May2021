@@ -1,6 +1,7 @@
 ﻿//using System;
 //using System.Net.Http;
 //using System.Threading.Tasks;
+//using Microsoft.Extensions.Configuration;
 //using Newtonsoft.Json;
 //using TodoApi.Data.Models;
 //using TodoApi.Models;
@@ -9,46 +10,46 @@
 //{
 //    public class TwelveDataService : ITwelveDataService
 //    {
-//        private readonly string apiKey;
-//        private readonly HttpClient client;
+//        private readonly IConfiguration configuration;
+//        private readonly IHttpClientFactory clientFactory;
 
-//        public TwelveDataService(string key, HttpClient client)
+//        public TwelveDataService(string key, IConfiguration configuration, IHttpClientFactory clientFactory)
 //        {
-//            this.apiKey = key;
-//            this.client = client;
+//            this.configuration = configuration;
+//            this.clientFactory = clientFactory;
 //        }
 
-//        /*
-//         * Asynchronously get a real time price for a particular NASDAQ or NYSE listed equity or ETF with a specified interval
-//         * symbol - a valid symbol for an equity or ETF listed on the NASDAQ or NYSE
-//         */
-//        public async Task<TwelveDataPrice> GetRealTimePriceAsync(string symbol)
+//        //Working with IHttpClientFactory
+//        public async Task<TwelveDataResult> GetRealTimePriceAsync(string symbol)
 //        {
-//            try
+//            var request = new HttpRequestMessage(HttpMethod.Get, $"price?symbol={symbol}&apikey={this.configuration["TwelveData:ApiKey"]}&format=JSON");
+//            var client = this.clientFactory.CreateClient("twelveData");
+//            using (var response = await client.SendAsync(request))
 //            {
-//                string endpoint = "https://api.twelvedata.com/price?symbol=" + symbol + "&apikey=" + apiKey;
-//                var response = await client.GetAsync(endpoint);
-//                string responseString = await response.Content.ReadAsStringAsync();
-//                var jsonResponse = JsonConvert.DeserializeObject<TimeSeriesRealTimePrice>(responseString);
-//                TwelveDataPrice realTimePrice = new TwelveDataPrice()
+//                response.EnsureSuccessStatusCode();
+//                var body = await response.Content.ReadAsStringAsync();
+//                var jsonResponse = JsonConvert.DeserializeObject<TwelveDataPrice>(body);
+//                TwelveDataResult result = new TwelveDataResult
 //                {
-//                    Price = Convert.ToDouble(jsonResponse?.Price)
+//                    Amount = jsonResponse.Price
 //                };
-
-//                if (!realTimePrice.Price.Equals(0)) return realTimePrice;
-//                //realTimePrice.ResponseStatus = Enums.TwelveDataClientResponseStatus.TwelveDataApiError;
-//                //realTimePrice.ResponseMessage = "Invalid symbol or bad API key";
-
-//                return realTimePrice;
-//            }
-//            catch (Exception e)
-//            {
-//                return new TwelveDataPrice()
-//                {
-//                    //ResponseStatus = Enums.TwelveDataClientResponseStatus.TwelveDataSharpError,
-//                    //ResponseMessage = e.ToString()
-//                };
+//                return result;
 //            }
 //        }
+
+//        //Working with HttpClient
+//        //public async Task<TwelveDataResult> GetPriceAsync()
+//        //{
+//        //    string endPoint = "https://api.twelvedata.com/price?symbol=AAPL&apikey=80576d2956804a20b19f71a0a9f15469&format=JSON";
+
+//        //    var response = await this.client.GetAsync(endPoint);
+//        //    string responseString = await response.Content.ReadAsStringAsync();
+//        //    var jsonResponse = JsonConvert.DeserializeObject<TwelveDataPrice>(responseString);
+//        //    TwelveDataResult result = new TwelveDataResult
+//        //    {
+//        //        Amount = jsonResponse.Price,
+//        //    };
+//        //    return price;
+//        //}
 //    }
 //}
