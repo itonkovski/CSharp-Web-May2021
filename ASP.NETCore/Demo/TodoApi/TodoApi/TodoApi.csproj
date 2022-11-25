@@ -7,7 +7,6 @@
   <ItemGroup>
     <None Remove="Swashbuckle.AspNetCore.SwaggerUI" />
     <None Remove="Swashbuckle.AspNetCore.SwaggerGen" />
-    <None Remove="Models\" />
     <None Remove="Microsoft.EntityFrameworkCore.InMemory" />
     <None Remove="Data\" />
     <None Remove="Data\Models\" />
@@ -17,6 +16,8 @@
     <None Remove="SpotifyAPI.Web" />
     <None Remove="TwelveDataSharp" />
     <None Remove="Services\" />
+    <None Remove="Data\Models\RealTimePrice\" />
+    <None Remove="Data\Models\ForexPair\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.1" />
@@ -32,9 +33,10 @@
     <PackageReference Include="TwelveDataSharp" Version="1.1.0" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
     <Folder Include="Data\" />
     <Folder Include="Data\Models\" />
     <Folder Include="Services\" />
+    <Folder Include="Data\Models\RealTimePrice\" />
+    <Folder Include="Data\Models\ForexPair\" />
   </ItemGroup>
 </Project>
