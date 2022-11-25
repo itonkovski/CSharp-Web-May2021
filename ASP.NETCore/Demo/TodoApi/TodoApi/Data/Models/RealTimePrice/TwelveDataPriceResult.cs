@@ -3,6 +3,7 @@ namespace TodoApi.Data.Models.RealTimePrice
 {
     public class TwelveDataPriceResult
     {
-        public string Amount { get; set; }
+        public string Id { get; set; }
+        public string Price { get; set; }
     }
 }

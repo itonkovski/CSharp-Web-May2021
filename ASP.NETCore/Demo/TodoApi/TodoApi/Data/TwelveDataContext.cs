@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
-using TodoApi.Data.Models.ForexPair;
 using TodoApi.Data.Models.RealTimePrice;
 
 namespace TodoApi.Data
@@ -14,6 +13,6 @@ namespace TodoApi.Data
         }
 
         public DbSet<TwelveDataPrice> TwelveDataPrices { get; set; }
-        public DbSet<TwelveDataForexPair> TwelveDataForexPairs { get; set; }
+        //public DbSet<TwelveDataForexPair> TwelveDataForexPairs { get; set; }
     }
 }
