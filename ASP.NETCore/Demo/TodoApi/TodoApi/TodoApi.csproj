@@ -38,5 +38,13 @@
     <Folder Include="Services\" />
     <Folder Include="Data\Models\RealTimePrice\" />
     <Folder Include="Data\Models\ForexPair\" />
+    <Folder Include="wwwroot\" />
+    <Folder Include="wwwroot\js\" />
+    <Folder Include="wwwroot\css\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\" />
+    <Content Remove="wwwroot\js\" />
+    <Content Remove="wwwroot\css\" />
   </ItemGroup>
 </Project>

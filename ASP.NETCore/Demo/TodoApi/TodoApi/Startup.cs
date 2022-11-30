@@ -60,6 +60,9 @@ namespace TodoApi
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+
             //app.UseSwagger();
 
             //app.UseSwaggerUI(c =>
@@ -71,7 +74,7 @@ namespace TodoApi
 
             app.UseRouting();
 
-            //app.UseAuthorization();
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

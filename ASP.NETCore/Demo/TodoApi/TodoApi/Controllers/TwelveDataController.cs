@@ -37,8 +37,6 @@ namespace TodoApi.Controllers
         {
             var request = new HttpRequestMessage(HttpMethod.Get, $"price?symbol=AAPL&apikey={this.configuration["TwelveData:ApiKey"]}&format=JSON");
             var client = this.clientFactory.CreateClient("twelveData");
-            //Guid guid = Guid.NewGuid();
-            //string str = guid.ToString();
             using (var response = await client.SendAsync(request))
             {
                 response.EnsureSuccessStatusCode();

@@ -51,16 +51,16 @@ namespace TodoApi.Controllers
 
             return ItemToDTO(todoItem);
         }
-    
+
 
         // GET: api/values
         [HttpGet]
         public async Task<IEnumerable<TodoItemDTO>> GetTodoItems()
-        {            
+        {
             return await this.dbContext
                 .TodoItems
                 .Select(x => ItemToDTO(x))
-                .ToListAsync();            
+                .ToListAsync();
         }
 
         [HttpDelete("{id}")]
@@ -82,7 +82,7 @@ namespace TodoApi.Controllers
 
         // PUT: api/TodoItems/5
         [HttpPut("{id}")]
-        public async Task<IActionResult>UpdateTodoItem(long id, TodoItemDTO todoItemDTO)
+        public async Task<IActionResult> UpdateTodoItem(long id, TodoItemDTO todoItemDTO)
         {
             todoItemDTO.Id = id;
             if (id != todoItemDTO.Id)
