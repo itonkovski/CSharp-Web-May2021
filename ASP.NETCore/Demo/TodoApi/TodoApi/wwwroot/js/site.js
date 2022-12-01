@@ -94,14 +94,17 @@ function _displayItems(data) {
     data.forEach(item => {
         let isCompleteCheckbox = document.createElement('input');
         isCompleteCheckbox.type = 'checkbox';
+        isCompleteCheckbox.classList.add('form-check-input');
         isCompleteCheckbox.disabled = false;
         isCompleteCheckbox.checked = item.IsComplete;
 
         let editButton = button.cloneNode(false);
+        editButton.classList.add('btn', 'btn-info');
         editButton.innerText = 'Edit';
         editButton.setAttribute('onclick', `displayEditForm(${item.Id})`);
 
         let deleteButton = button.cloneNode(false);
+        deleteButton.classList.add('btn', 'btn-warning');
         deleteButton.innerText = 'Delete';
         deleteButton.setAttribute('onclick', `deleteItem(${item.Id})`);
 

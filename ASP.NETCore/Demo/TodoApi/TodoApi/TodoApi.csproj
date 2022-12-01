@@ -18,6 +18,7 @@
     <None Remove="Services\" />
     <None Remove="Data\Models\RealTimePrice\" />
     <None Remove="Data\Models\ForexPair\" />
+    <None Remove="bootstrap" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.2.1" />
@@ -31,6 +32,7 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.0" />
     <PackageReference Include="SpotifyAPI.Web" Version="5.0.0" />
     <PackageReference Include="TwelveDataSharp" Version="1.1.0" />
+    <PackageReference Include="bootstrap" Version="4.0.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Data\" />
@@ -41,10 +43,12 @@
     <Folder Include="wwwroot\" />
     <Folder Include="wwwroot\js\" />
     <Folder Include="wwwroot\css\" />
+    <Folder Include="wwwroot\images\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\" />
     <Content Remove="wwwroot\js\" />
     <Content Remove="wwwroot\css\" />
+    <Content Remove="wwwroot\images\" />
   </ItemGroup>
 </Project>
